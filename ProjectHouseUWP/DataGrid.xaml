@@ -1,0 +1,54 @@
+﻿<Page
+    x:Class="ProjectHouseUWP.DataGrid"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ProjectHouseUWP"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:controls="using:Microsoft.Toolkit.Uwp.UI.Controls"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+    Loaded="OnPageLoaded">
+
+    <Grid>
+        <controls:DataGrid x:Name="TestDataGrid"
+          ItemsSource="{x:Bind Info,Mode=OneWay}"
+          AutoGenerateColumns="False"
+         
+          AreRowDetailsFrozen="True"
+          CanUserReorderColumns="False"
+          CanUserResizeColumns="True"
+          CanUserSortColumns="True"
+          GridLinesVisibility="All"
+          HeadersVisibility="Column"
+          AlternatingRowBackground="LightGray"
+          RowEditEnding="TestDataGrid_RowEditEnding"
+          SelectionMode="Single">
+            <controls:DataGrid.Columns >
+                <controls:DataGridTextColumn Header="Название"
+                                         Binding="{Binding NameOfPlace}"/>
+
+                <controls:DataGridTextColumn Header="АПИ логин"
+                                         Binding="{Binding APILogin}"/>
+
+                <controls:DataGridTextColumn Header="АПИ пароль"
+                                         Binding="{Binding APIPass}"/>
+
+                <controls:DataGridTextColumn Header="Пользователь"
+                                         Binding="{Binding User}"/>
+
+                <controls:DataGridTextColumn Header="GUID Компании"
+                                         Binding="{Binding CompanyGuid}"/>
+
+                <controls:DataGridTextColumn Header="GUID площадки"
+                                         Binding="{Binding PlaceGuid}"/>
+
+                <controls:DataGridTextColumn Header="АПИ ключ"
+                                         Binding="{Binding APIKey}"/>
+
+            </controls:DataGrid.Columns>
+        </controls:DataGrid>
+        <Button x:Name="SaveChanges" Content="Save changes" Margin="397,664,0,0" VerticalAlignment="Top" Height="55" Width="116" Click="SaveChanges_Click"/>
+        <Button x:Name="DeleteBtn" Content="Delete" Margin="257,664,0,0" VerticalAlignment="Top" Height="55" Width="116" Click="DeleteBtn_Click"/>
+        <Button x:Name="AddBtn" Content="Add" Margin="121,664,0,0" VerticalAlignment="Top" Width="116" Height="55" Click="AddBtn_Click"/>
+    </Grid>
+</Page>
