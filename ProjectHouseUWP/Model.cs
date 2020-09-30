@@ -19,5 +19,6 @@ namespace ProjectHouseUWP
         public string APIKey { get; set; }
         public string Master { get; set; }
         public string Title { get; set; }
+        public string AppId { get; set; }
     }
 }

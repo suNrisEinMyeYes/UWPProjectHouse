@@ -123,6 +123,8 @@
     <Compile Include="DataGrid.xaml.cs">
       <DependentUpon>DataGrid.xaml</DependentUpon>
     </Compile>
+    <Compile Include="HttpRest.cs" />
+    <Compile Include="IEnumerationPaths.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>

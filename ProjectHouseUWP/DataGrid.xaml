@@ -50,5 +50,6 @@
         <Button x:Name="SaveChanges" Content="Save changes" Margin="397,664,0,0" VerticalAlignment="Top" Height="55" Width="116" Click="SaveChanges_Click"/>
         <Button x:Name="DeleteBtn" Content="Delete" Margin="257,664,0,0" VerticalAlignment="Top" Height="55" Width="116" Click="DeleteBtn_Click"/>
         <Button x:Name="AddBtn" Content="Add" Margin="121,664,0,0" VerticalAlignment="Top" Width="116" Height="55" Click="AddBtn_Click"/>
+        <Button x:Name="XMLBtn" Content="XMLPost" Margin="538,664,0,0" VerticalAlignment="Top" Width="116" Height="55" Click="XMLBtn_Click"/>
     </Grid>
 </Page>

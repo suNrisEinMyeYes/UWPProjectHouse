@@ -84,17 +84,19 @@ namespace ProjectHouseUWP
                                 while (await reader.ReadAsync())
                                 {
                                     var product = new Model();
+                                    
                                     product.CodeFil = reader.GetInt16(0);
-                                    product.Master = reader.GetString(1);
+                                    product.Master = SafeGetString(reader, 1);
                                     product.CodePred = reader.GetInt16(2);
-                                    product.Title = reader.GetString(3);
-                                    product.APILogin = reader.GetString(4);
-                                    product.APIPass = reader.GetString(5);
-                                    product.CompanyGuid = reader.GetString(6);
-                                    product.PlaceGuid = reader.GetString(7);
-                                    product.APIKey = reader.GetString(8);
-                                    product.User = reader.GetString(10);
-                                    product.NameOfPlace = reader.GetString(11);
+                                    product.Title = SafeGetString(reader, 3);
+                                    product.APILogin = SafeGetString(reader, 4);
+                                    product.APIPass = SafeGetString(reader, 5);
+                                    product.CompanyGuid = SafeGetString(reader, 6);
+                                    product.PlaceGuid = SafeGetString(reader, 7);
+                                    product.APIKey = SafeGetString(reader, 8);
+                                    product.AppId = SafeGetString(reader, 9);
+                                    product.User = SafeGetString(reader, 10);
+                                    product.NameOfPlace = SafeGetString(reader, 11);
                                     products.Add(product);
                                 }
                             }
@@ -110,14 +112,19 @@ namespace ProjectHouseUWP
             return null;
         }
 
+        private static string SafeGetString(SqlDataReader reader, int colIndex)
+        {
+            if (!reader.IsDBNull(colIndex))
+                return reader.GetString(colIndex);
+            return string.Empty;
+        }
 
-        
 
         private async void SaveChanges_Click(object sender, RoutedEventArgs e)
         {
             foreach (var item in Info)
             {
-                var Query = "Update Merc_xs set S.Name=" + item.NameOfPlace  + " where S.CodM=" + item.CodeFil + " and S.CodM=" + item.CodePred;
+                var Query = $"Update Merc_xs set S.Name=\"{item.NameOfPlace}\" where S.CodM=\"{item.CodeFil}\" and S.CodM=\"{item.CodePred}\"";
                 await ConnHolder.NonQueryAsyncConnect(Query);
             }
           
@@ -127,7 +134,8 @@ namespace ProjectHouseUWP
         {
             
             var item = (Model)TestDataGrid.SelectedItem;
-            var Query = "Delete from Merc_xs where S.CodM=" + item.CodeFil + " and S.CodM=" + item.CodePred;
+
+            var Query = $"Delete from Merc_xs where S.CodM=\"{item.CodeFil}\" and S.CodM=\"{item.CodePred}\"";
             await ConnHolder.NonQueryAsyncConnect(Query);
             
 
@@ -151,6 +159,16 @@ namespace ProjectHouseUWP
                 Debug.WriteLine(driver.NameOfPlace);
 
             }
+        }
+
+        private async void XMLBtn_Click(object sender, RoutedEventArgs e)
+        {
+            var item = (Model)TestDataGrid.SelectedItem;
+            await HttpRest.InfoPostAsync(IenumerationPaths.PostFirstTime, item);
+            await HttpRest.InfoPostAsync(IenumerationPaths.PostToCheck, item);
+            
+            
+
         }
     }
 

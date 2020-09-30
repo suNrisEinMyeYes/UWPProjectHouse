@@ -26,5 +26,7 @@ namespace ProjectHouseUWP
         {
             this.InitializeComponent();
         }
+
+        
     }
 }

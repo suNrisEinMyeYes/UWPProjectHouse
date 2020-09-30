@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\Администратор\source\repos\ProjectHouseUWP\ProjectHouseUWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-09-21T09:11:15.770</Modified>
+      <Modified>2020-09-30T08:42:38.331</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Администратор\source\repos\ProjectHouseUWP\ProjectHouseUWP\bin\x86\Debug\ProjectHouseUWP.exe">
       <PackagePath>entrypoint\ProjectHouseUWP.exe</PackagePath>
-      <Modified>2020-09-21T09:11:13.999</Modified>
+      <Modified>2020-09-30T08:42:36.408</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Администратор\.nuget\packages\colorcode.core\2.0.6\lib\netstandard1.4\ColorCode.Core.dll">
       <PackagePath>ColorCode.Core.dll</PackagePath>
@@ -158,23 +158,23 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Администратор\source\repos\ProjectHouseUWP\ProjectHouseUWP\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2020-09-21T09:11:13.814</Modified>
+      <Modified>2020-09-30T08:12:00.829</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Администратор\source\repos\ProjectHouseUWP\ProjectHouseUWP\bin\x86\Debug\DataGrid.xbf">
       <PackagePath>DataGrid.xbf</PackagePath>
-      <Modified>2020-09-21T09:11:13.814</Modified>
+      <Modified>2020-09-30T08:12:00.830</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Администратор\source\repos\ProjectHouseUWP\ProjectHouseUWP\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2020-09-21T09:11:13.814</Modified>
+      <Modified>2020-09-30T08:12:00.830</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Администратор\source\repos\ProjectHouseUWP\ProjectHouseUWP\bin\x86\Debug\Settings.xbf">
       <PackagePath>Settings.xbf</PackagePath>
-      <Modified>2020-09-21T09:11:13.815</Modified>
+      <Modified>2020-09-30T08:12:00.830</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Администратор\source\repos\ProjectHouseUWP\ProjectHouseUWP\bin\x86\Debug\VSD.xbf">
       <PackagePath>VSD.xbf</PackagePath>
-      <Modified>2020-09-21T09:11:13.815</Modified>
+      <Modified>2020-09-30T08:12:00.830</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.18362.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -182,11 +182,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Администратор\source\repos\ProjectHouseUWP\ProjectHouseUWP\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2020-09-17T05:25:22.797</Modified>
+      <Modified>2020-09-30T04:41:31.522</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Администратор\source\repos\ProjectHouseUWP\ProjectHouseUWP\bin\x86\Debug\Core\ProjectHouseUWP.exe">
       <PackagePath>ProjectHouseUWP.exe</PackagePath>
-      <Modified>2020-09-21T09:11:15.757</Modified>
+      <Modified>2020-09-30T08:42:38.317</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

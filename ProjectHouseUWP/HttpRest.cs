@@ -6,133 +6,153 @@ using System.Threading.Tasks;
 using System.IO;
 using Microsoft.Graphics.Canvas.Text;
 using System.Net.Http;
+using Windows.Storage;
+using System.Net;
+using System.Diagnostics;
 
 namespace ProjectHouseUWP
 {
     class HttpRest
     {
-        readonly static string pathToXMLFirst = @"C:\Users\Администратор\Desktop\XMLs\File.xml";
-        readonly static string pathToXMLCheck = @"C:\Users\Администратор\Desktop\XMLs\File2.xml";
+        readonly static string pathToXMLFirst = @"File.xml";//@"C:\Users\Администратор\Desktop\XMLs\File.xml";
+        readonly static string pathToXMLCheck = @"File2.xml";//@"C:\Users\Администратор\Desktop\XMLs\File2.xml";
+        readonly static StorageFolder storageFolder = Windows.Storage.ApplicationData.Current.LocalFolder;
         readonly static string amerca = "https://api.vetrf.ru/platform/services/2.0/ApplicationManagementService";
         static string smartPath = "";
-        static readonly HttpClient client = new HttpClient();
-        private static void FormXMLFile(IenumerationPaths ienumerationPaths)
+        static HttpClient client;
+        private static async void FormXMLFile(IenumerationPaths ienumerationPaths, Model selected)
         {
-
+            DateTime now = DateTime.Now;
+            DateTime prevYear = new DateTime(2020, 01, 01);
             if (ienumerationPaths == IenumerationPaths.PostFirstTime)
             {
                 smartPath = pathToXMLFirst;
-                using (StreamWriter txs = File.CreateText(pathToXMLFirst))
+                StorageFile sampleFile = await storageFolder.CreateFileAsync("File.xml", Windows.Storage.CreationCollisionOption.ReplaceExisting);
+
+                await FileIO.AppendTextAsync(sampleFile, "<?xml version=\"1.0\" encoding=\"ISO-8859-1\"?>\n");
+                await FileIO.AppendTextAsync(sampleFile, "<SOAP-ENV:Envelope xmlns:dt=\"http://api.vetrf.ru/schema/cdm/dictionary/v2\"\n");
+                await FileIO.AppendTextAsync(sampleFile, "xmlns:bs=\"http://api.vetrf.ru/schema/cdm/base\" xmlns:merc=\"http://api.vetrf.ru/schema/cdm/mercury/g2b/applications/v2\"\n");
+                await FileIO.AppendTextAsync(sampleFile, "xmlns:apldef=\"http://api.vetrf.ru/schema/cdm/application/ws-definitions\" xmlns:apl=\"http://api.vetrf.ru/schema/cdm/application\"\n");
+                await FileIO.AppendTextAsync(sampleFile, "xmlns:vd=\"http://api.vetrf.ru/schema/cdm/mercury/vet-document/v2\" xmlns:SOAP-ENV=\"http://schemas.xmlsoap.org/soap/envelope/\">\n");
+                await FileIO.AppendTextAsync(sampleFile, "<SOAP-ENV:Header/>\n");
+                await FileIO.AppendTextAsync(sampleFile, "<SOAP-ENV:Body>\n");
+                await FileIO.AppendTextAsync(sampleFile, "<apldef:submitApplicationRequest>\n");
+                await FileIO.AppendTextAsync(sampleFile, "<apldef:apiKey>" + selected.APIKey + "</apldef:apiKey>\n");
+                await FileIO.AppendTextAsync(sampleFile, "<apl:application>\n");
+                await FileIO.AppendTextAsync(sampleFile, "<apl:serviceId>mercury-g2b.service:2.1</apl:serviceId>\n");
+                await FileIO.AppendTextAsync(sampleFile, "<apl:issuerId>" + selected.CompanyGuid + "</apl:issuerId>\n");
+                await FileIO.AppendTextAsync(sampleFile, "<apl:issueDate>" + now.ToString("yyyy.mm.dd") + "T" + now.ToString("hh:mm:ss") + "</apl:issueDate>\n");
+                await FileIO.AppendTextAsync(sampleFile, "<apl:data>\n");
+                await FileIO.AppendTextAsync(sampleFile, "<merc:getVetDocumentListRequest>\n");
+                await FileIO.AppendTextAsync(sampleFile, "<merc:localTransactionId>td102</merc:localTransactionId>\n");
+                await FileIO.AppendTextAsync(sampleFile, "<merc:initiator>\n");
+                await FileIO.AppendTextAsync(sampleFile, "<vd:login>" + selected.User + "</vd:login>\n");
+                await FileIO.AppendTextAsync(sampleFile, "</merc:initiator>\n");
+                await FileIO.AppendTextAsync(sampleFile, "<bs:listOptions>\n");
+                await FileIO.AppendTextAsync(sampleFile, "</bs:listOptions>\n");
+                await FileIO.AppendTextAsync(sampleFile, "<vd:issueDateInterval>\n");
+                await FileIO.AppendTextAsync(sampleFile, "<bs:beginDate>" + prevYear.ToString("yyyy.mm.dd") + "T00:00:00</bs:beginDate>\n");
+                await FileIO.AppendTextAsync(sampleFile, "<bs:endDate>" + now.ToString("yyyy.mm.dd") + "T23:59:59</bs:endDate>\n");
+                await FileIO.AppendTextAsync(sampleFile, "</vd:issueDateInterval>\n");
+                await FileIO.AppendTextAsync(sampleFile, "<dt:enterpriseGuid>" + selected.CompanyGuid + "</dt:enterpriseGuid>\n");
+                await FileIO.AppendTextAsync(sampleFile, "<vd:vetDocumentType>INCOMING</vd:vetDocumentType>\n");
+                await FileIO.AppendTextAsync(sampleFile, "<vd:vetDocumentStatus>UTILIZED</vd:vetDocumentStatus>\n");
+
+                /*
+                switch (FD_tp)
                 {
-                    txs.WriteLine("<?xml version=\"1.0\" encoding=\"ISO-8859-1\"?>");
-                    txs.WriteLine("<SOAP-ENV:Envelope xmlns:dt=\"http://api.vetrf.ru/schema/cdm/dictionary/v2\"");
-                    txs.WriteLine("xmlns:bs=\"http://api.vetrf.ru/schema/cdm/base\" xmlns:merc=\"http://api.vetrf.ru/schema/cdm/mercury/g2b/applications/v2\"");
-                    txs.WriteLine("xmlns:apldef=\"http://api.vetrf.ru/schema/cdm/application/ws-definitions\" xmlns:apl=\"http://api.vetrf.ru/schema/cdm/application\"");
-                    txs.WriteLine("xmlns:vd=\"http://api.vetrf.ru/schema/cdm/mercury/vet-document/v2\" xmlns:SOAP-ENV=\"http://schemas.xmlsoap.org/soap/envelope/\">");
-                    txs.WriteLine("<SOAP-ENV:Header/>");
-                    txs.WriteLine("<SOAP-ENV:Body>");
-                    txs.WriteLine("<apldef:submitApplicationRequest>");
-                    txs.WriteLine("<apldef:apiKey>" + apks + "</apldef:apiKey>");
-                    txs.WriteLine("<apl:application>");
-                    txs.WriteLine("<apl:serviceId>mercury-g2b.service:2.1</apl:serviceId>");
-                    txs.WriteLine("<apl:issuerId>" + gds + "</apl:issuerId>");
-                    txs.WriteLine("<apl:issueDate>" + format("DY3,DO(%Y-%M-%D)", date(Today())) + "T" + format("TO(%H:%M:%S)", time()) + "</apl:issueDate>");
-                    txs.WriteLine("<apl:data>");
-                    txs.WriteLine("<merc:getVetDocumentListRequest>");
-                    txs.WriteLine("<merc:localTransactionId>td102</merc:localTransactionId>");
-                    txs.WriteLine("<merc:initiator>");
-                    txs.WriteLine("<vd:login>" + ints + "</vd:login>");
-                    txs.WriteLine("</merc:initiator>");
-                    txs.WriteLine("<bs:listOptions>");
-                    txs.WriteLine("</bs:listOptions>");
-                    txs.WriteLine("<vd:issueDateInterval>");
-                    txs.WriteLine("<bs:beginDate>" + format("DY3,DO(%Y-%M-%D)", date(Dat1)) + "T00:00:00</bs:beginDate>");
-                    txs.WriteLine("<bs:endDate>" + format("DY3,DO(%Y-%M-%D)", date(Dat2)) + "T23:59:59</bs:endDate>");
-                    txs.WriteLine("</vd:issueDateInterval>");
-                    txs.WriteLine("<dt:enterpriseGuid>" + gds + "</dt:enterpriseGuid>");
-                    switch (FD_tp)
-                    {
-                        case "Входящие":
-                            txs.WriteLine("<vd:vetDocumentType>INCOMING</vd:vetDocumentType>");
-                            break;
-                        case "Исходящие":
-                            txs.WriteLine("<vd:vetDocumentType>OUTGOING</vd:vetDocumentType>");
-                            break;
-                        case "Транспортные":
-                            txs.WriteLine("<vd:vetDocumentType>TRANSPORT</vd:vetDocumentType>");
-                            break;
+                    case "Входящие":
+                        txs.WriteLine("<vd:vetDocumentType>INCOMING</vd:vetDocumentType>");
+                        break;
+                    case "Исходящие":
+                        txs.WriteLine("<vd:vetDocumentType>OUTGOING</vd:vetDocumentType>");
+                        break;
+                    case "Транспортные":
+                        txs.WriteLine("<vd:vetDocumentType>TRANSPORT</vd:vetDocumentType>");
+                        break;
 
-                        case "Производственные":
-                            txs.WriteLine("<vd:vetDocumentType>PRODUCTIVE</vd:vetDocumentType>");
-                            break;
+                    case "Производственные":
+                        txs.WriteLine("<vd:vetDocumentType>PRODUCTIVE</vd:vetDocumentType>");
+                        break;
 
-                        case "Возвратные":
-                            txs.WriteLine("<vd:vetDocumentType>RETURNABLE</vd:vetDocumentType>");
-                            break;
+                    case "Возвратные":
+                        txs.WriteLine("<vd:vetDocumentType>RETURNABLE</vd:vetDocumentType>");
+                        break;
 
-                        default:
-                            break;
-                    }
-
-
-                    switch (FD_st)
-                    {
-                        case "Погашен":
-                            txs.WriteLine("<vd:vetDocumentStatus>UTILIZED</vd:vetDocumentStatus>");
-                            break;
-
-                        case "Подтвержден":
-                            txs.WriteLine("<vd:vetDocumentStatus>CONFIRMED</vd:vetDocumentStatus>");
-                            break;
-
-                        case "Аннулирован":
-                            txs.WriteLine("<vd:vetDocumentStatus>WITHDRAWN</vd:vetDocumentStatus>");
-                            break;
-                        default:
-                            break;
-                    }
-
-                    txs.WriteLine("</merc:getVetDocumentListRequest>");
-                    txs.WriteLine("</apl:data>");
-                    txs.WriteLine("</apl:application>");
-                    txs.WriteLine("</apldef:submitApplicationRequest>");
-                    txs.WriteLine("</SOAP-ENV:Body>");
-                    txs.WriteLine("</SOAP-ENV:Envelope>");
-
+                    default:
+                        break;
                 }
+
+
+                switch (FD_st)
+                {
+                    case "Погашен":
+                        txs.WriteLine("<vd:vetDocumentStatus>UTILIZED</vd:vetDocumentStatus>");
+                        break;
+
+                    case "Подтвержден":
+                        txs.WriteLine("<vd:vetDocumentStatus>CONFIRMED</vd:vetDocumentStatus>");
+                        break;
+
+                    case "Аннулирован":
+                        txs.WriteLine("<vd:vetDocumentStatus>WITHDRAWN</vd:vetDocumentStatus>");
+                        break;
+                    default:
+                        break;
+                }*/
+
+
+                await FileIO.AppendTextAsync(sampleFile, "</merc:getVetDocumentListRequest>\n");
+                await FileIO.AppendTextAsync(sampleFile, "</apl:data>\n");
+                await FileIO.AppendTextAsync(sampleFile, "</apl:application>\n");
+                await FileIO.AppendTextAsync(sampleFile, "</apldef:submitApplicationRequest>\n");
+                await FileIO.AppendTextAsync(sampleFile, "</SOAP-ENV:Body>\n");
+                await FileIO.AppendTextAsync(sampleFile, "</SOAP-ENV:Envelope>\n");
+
+
             }
             else if (ienumerationPaths == IenumerationPaths.PostToCheck)
             {
                 smartPath = pathToXMLCheck;
-                using (StreamWriter txs = File.CreateText(pathToXMLCheck))
-                {
-                    txs.WriteLine("<SOAP-ENV:Envelope xmlns:dt=\"http://api.vetrf.ru/schema/cdm/dictionary/v2\"");
-                    txs.WriteLine("xmlns:bs=\"http://api.vetrf.ru/schema/cdm/base\" xmlns:merc=\"http://api.vetrf.ru/schema/cdm/mercury/g2b/applications/v2\"");
-                    txs.WriteLine("xmlns:ws=\"http://api.vetrf.ru/schema/cdm/application/ws-definitions\" xmlns:apl=\"http://api.vetrf.ru/schema/cdm/application\"");
-                    txs.WriteLine("xmlns:vd=\"http://api.vetrf.ru/schema/cdm/mercury/vet-document/v2\" xmlns:SOAP-ENV=\"http://schemas.xmlsoap.org/soap/envelope/\">");
-                    txs.WriteLine("<SOAP-ENV:Header/>");
-                    txs.WriteLine("<SOAP-ENV:Body>");
-                    txs.WriteLine("<ws:receiveApplicationResultRequest>");
-                    txs.WriteLine("<ws:apiKey>" + apks + "</ws:apiKey>");
-                    txs.WriteLine("<ws:issuerId>" + gdps + "</ws:issuerId>");
-                    txs.WriteLine("<ws:applicationId>" + apds + "</ws:applicationId>");
-                    txs.WriteLine("</ws:receiveApplicationResultRequest>");
-                    txs.WriteLine("</SOAP-ENV:Body>");
-                    txs.WriteLine("</SOAP-ENV:Envelope>");
+                StorageFile sampleFileToCheck = await storageFolder.CreateFileAsync("File2.xml", Windows.Storage.CreationCollisionOption.ReplaceExisting);
 
-                }
+                await FileIO.AppendTextAsync(sampleFileToCheck, "<SOAP-ENV:Envelope xmlns:dt=\"http://api.vetrf.ru/schema/cdm/dictionary/v2\"\n");
+                await FileIO.AppendTextAsync(sampleFileToCheck, "xmlns:bs=\"http://api.vetrf.ru/schema/cdm/base\" xmlns:merc=\"http://api.vetrf.ru/schema/cdm/mercury/g2b/applications/v2\"\n");
+                await FileIO.AppendTextAsync(sampleFileToCheck, "xmlns:ws=\"http://api.vetrf.ru/schema/cdm/application/ws-definitions\" xmlns:apl=\"http://api.vetrf.ru/schema/cdm/application\"\n");
+                await FileIO.AppendTextAsync(sampleFileToCheck, "xmlns:vd=\"http://api.vetrf.ru/schema/cdm/mercury/vet-document/v2\" xmlns:SOAP-ENV=\"http://schemas.xmlsoap.org/soap/envelope/\">\n");
+                await FileIO.AppendTextAsync(sampleFileToCheck, "<SOAP-ENV:Header/>\n");
+                await FileIO.AppendTextAsync(sampleFileToCheck, "<SOAP-ENV:Body>\n");
+                await FileIO.AppendTextAsync(sampleFileToCheck, "<ws:receiveApplicationResultRequest>\n");
+                await FileIO.AppendTextAsync(sampleFileToCheck, "<ws:apiKey>" + selected.APIKey + "</ws:apiKey>\n");
+                await FileIO.AppendTextAsync(sampleFileToCheck, "<ws:issuerId>" + selected.PlaceGuid + "</ws:issuerId>\n");
+                await FileIO.AppendTextAsync(sampleFileToCheck, "<ws:applicationId>" + selected.AppId + "</ws:applicationId>\n");
+                await FileIO.AppendTextAsync(sampleFileToCheck, "</ws:receiveApplicationResultRequest>\n");
+                await FileIO.AppendTextAsync(sampleFileToCheck, "</SOAP-ENV:Body>\n");
+                await FileIO.AppendTextAsync(sampleFileToCheck, "</SOAP-ENV:Envelope>\n");
+                
+
             }
-
+                    
         }
 
-        public static async Task InfoPostAsync(IenumerationPaths ienumerationPaths)
+        public static async Task InfoPostAsync(IenumerationPaths ienumerationPaths, Model selected)
         {
-            FormXMLFile(ienumerationPaths);
+            NetworkCredential cred = new NetworkCredential();
+            HttpClientHandler httpClientHandler = new HttpClientHandler();
+            cred.UserName = selected.APILogin;
+            cred.Password = selected.APIPass;
+            Debug.WriteLine(selected.APILogin);
+            Debug.WriteLine(selected.APIPass);
+            httpClientHandler.Credentials = cred;
+            client = new HttpClient(httpClientHandler);
+            
+            FormXMLFile(ienumerationPaths, selected);
             try
             {
                 var data = new StringContent(smartPath, Encoding.UTF8);
                 var Response =  await client.PostAsync(amerca, data);
-                Console.WriteLine(Response);
+                Debug.WriteLine(Response.StatusCode);
+                Debug.WriteLine(Response.ReasonPhrase);
             }
             catch (HttpRequestException e)
             {
