@@ -124,7 +124,7 @@ namespace ProjectHouseUWP
         {
             foreach (var item in Info)
             {
-                var Query = $"Update Merc_xs set S.Name=\"{item.NameOfPlace}\" where S.CodM=\"{item.CodeFil}\" and S.CodM=\"{item.CodePred}\"";
+                var Query = $"Update Merc_xs set Name=\'{item.NameOfPlace}\', Login = \'{item.APILogin}\', Passw = \'{item.APIPass}\', GUID = \'{item.CompanyGuid}\', GUIDP = \'{item.PlaceGuid}\', Initiator = \'{item.User}\', APIKey = \'{item.APIKey}\' where CodM= {item.CodeFil} and CodB= {item.CodePred}";
                 await ConnHolder.NonQueryAsyncConnect(Query);
             }
           
@@ -135,7 +135,7 @@ namespace ProjectHouseUWP
             
             var item = (Model)TestDataGrid.SelectedItem;
 
-            var Query = $"Delete from Merc_xs where S.CodM=\"{item.CodeFil}\" and S.CodM=\"{item.CodePred}\"";
+            var Query = $"Delete from Merc_xs where S.CodM={item.CodeFil} and S.CodM={item.CodePred}S";
             await ConnHolder.NonQueryAsyncConnect(Query);
             
 
@@ -148,16 +148,14 @@ namespace ProjectHouseUWP
             Info.Add(new Model());
         }
 
-        private void TestDataGrid_RowEditEnding(object sender, Microsoft.Toolkit.Uwp.UI.Controls.DataGridRowEditEndingEventArgs e)
+        private async void TestDataGrid_RowEditEnding(object sender, Microsoft.Toolkit.Uwp.UI.Controls.DataGridRowEditEndingEventArgs e)
         {
             if (e.EditAction == DataGridEditAction.Commit)
-
             {
-
-                Model driver = e.Row.DataContext as Model;
-
-                Debug.WriteLine(driver.NameOfPlace);
-
+                Model item = e.Row.DataContext as Model;
+                var Query = $"Update Merc_xs set Name=\'{item.NameOfPlace}\', Login = \'{item.APILogin}\', Passw = \'{item.APIPass}\', GUID = \'{item.CompanyGuid}\', GUIDP = \'{item.PlaceGuid}\', Initiator = \'{item.User}\', APIKey = \'{item.APIKey}\' where CodM= {item.CodeFil} and CodB= {item.CodePred}";
+                await ConnHolder.NonQueryAsyncConnect(Query);
+                //Debug.WriteLine(item.NameOfPlace);
             }
         }
 

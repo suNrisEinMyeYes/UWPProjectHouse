@@ -56,7 +56,7 @@ namespace ProjectHouseUWP
                         {
                             cmd.CommandText = Query;
                             changedRows = cmd.ExecuteNonQuery();
-                            Debug.WriteLine(changedRows);
+                            //Debug.WriteLine(changedRows);
                         }
                     }
                 }
