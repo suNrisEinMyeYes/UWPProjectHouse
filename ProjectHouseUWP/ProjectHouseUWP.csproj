@@ -136,6 +136,8 @@
     <Compile Include="VSD.xaml.cs">
       <DependentUpon>VSD.xaml</DependentUpon>
     </Compile>
+    <Compile Include="XMLFirstAnswerModel.cs" />
+    <Compile Include="XmlParser.cs" />
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -151,6 +153,8 @@
     <Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
     <Content Include="Assets\StoreLogo.png" />
     <Content Include="Assets\Wide310x150Logo.scale-200.png" />
+    <Content Include="XMLFile1.xml" />
+    <Content Include="XMLFile2.xml" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">

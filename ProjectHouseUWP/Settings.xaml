@@ -6,23 +6,45 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Margin="-4,0,0,0">
 
     <Grid KeyDown="Grid_KeyDown">
-        <TextBox x:Name="Server" HorizontalAlignment="Left" Height="44" Margin="370,76,0,0" Text="192.168.0.209" TextWrapping="Wrap" VerticalAlignment="Top" Width="232" FontSize="18" AutomationProperties.Name="Server"/>
-        <TextBox x:Name="DBName" HorizontalAlignment="Left" Height="44" Margin="370,166,0,0" Text="td010119" TextWrapping="Wrap" VerticalAlignment="Top" Width="232" FontSize="18"/>
-        <TextBox x:Name="Login" HorizontalAlignment="Left" Height="44" Margin="370,258,0,0" Text="tdmerc" TextWrapping="Wrap" VerticalAlignment="Top" Width="232" FontSize="18"/>
-        <PasswordBox x:Name="Password" HorizontalAlignment="Left" Height="44" Margin="370,366,0,0" VerticalAlignment="Top" Width="232" FontSize="18" PlaceholderText=""/>
-        <TextBlock HorizontalAlignment="Left" Margin="52,76,0,0" Text="Server: " TextWrapping="Wrap" VerticalAlignment="Top" Height="44" Width="140" FontSize="24"/>
-        <TextBlock HorizontalAlignment="Left" Margin="52,166,0,0" Text="Database name:" TextWrapping="Wrap" VerticalAlignment="Top" Height="44" Width="210" FontSize="24"/>
-        <TextBlock HorizontalAlignment="Left" Margin="52,258,0,0" Text="Login:" TextWrapping="Wrap" VerticalAlignment="Top" Height="44" Width="140" FontSize="24"/>
-        <TextBlock HorizontalAlignment="Left" Margin="52,366,0,0" Text="Password:" TextWrapping="Wrap" VerticalAlignment="Top" Height="44" Width="140" FontSize="24"/>
-        <Button Content="Save" Margin="104,0,0,0" Height="46" Width="148" AutomationProperties.AcceleratorKey="Enter" Click="Save_Click"/>
-        <TextBlock x:Name="SuccessBlock" HorizontalAlignment="Left" Margin="457,471,0,0" Text="Successfully saved" TextWrapping="Wrap" VerticalAlignment="Top" Height="65" Width="436" FontSize="48" FocusVisualPrimaryBrush="Black" FocusVisualSecondaryBrush="#9923FF00" Foreground="#9900A0FB" FontWeight="Normal" SelectionHighlightColor="#FF874040" Visibility="Collapsed"/>
-        <ProgressRing x:Name="ProgRing" HorizontalAlignment="Left" Margin="453,477,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Height="107" Width="149" FontSize="12" Canvas.ZIndex="3">
-            <ProgressRing.RenderTransform>
-                <CompositeTransform ScaleX="1" ScaleY="1"/>
-            </ProgressRing.RenderTransform>
-        </ProgressRing>
+        <Grid x:Name="ExtraGrid" HorizontalAlignment="Left" Height="134" VerticalAlignment="Top" Margin="-600,0,0,0" Width="552" Visibility="Collapsed">
+            <TextBox x:Name="Server" HorizontalAlignment="Left" Height="44" Text="192.168.0.209" TextWrapping="Wrap" VerticalAlignment="Top" Width="232" FontSize="18" AutomationProperties.Name="Server" Visibility="Visible" Margin="318,0,0,0"/>
+            <TextBox x:Name="DBName" HorizontalAlignment="Left" Height="44" Margin="318,90,0,0" Text="td010119" TextWrapping="Wrap" VerticalAlignment="Top" Width="232" FontSize="18" Visibility="Visible"/>
+            <TextBlock x:Name="ServerTxt" HorizontalAlignment="Left" Text="Server: " TextWrapping="Wrap" VerticalAlignment="Top" Height="44" Width="140" FontSize="24" Visibility="Visible" Margin="0,-10,0,0"/>
+            <TextBlock x:Name="DBNameTxt" HorizontalAlignment="Left" Margin="0,90,0,0" Text="Database name:" TextWrapping="Wrap" VerticalAlignment="Top" Height="44" Width="210" FontSize="24" Visibility="Visible"/>
+            <Grid.Transitions>
+                <TransitionCollection>
+                    <RepositionThemeTransition/>
+                </TransitionCollection>
+            </Grid.Transitions>
+        </Grid>
+        <Grid x:Name="MainGrid" HorizontalAlignment="Left" Height="359" Margin="36,41,0,0" VerticalAlignment="Top" Width="1026">
+            <TextBox x:Name="Login" HorizontalAlignment="Left" Height="44" Margin="318,0,0,0" Text="tdmerc" TextWrapping="Wrap" VerticalAlignment="Top" Width="232" FontSize="18"/>
+            <PasswordBox x:Name="Password" HorizontalAlignment="Left" Height="44" Margin="318,108,0,0" VerticalAlignment="Top" Width="232" FontSize="18" PlaceholderText=""/>
+            <TextBlock x:Name="LoginTxt" HorizontalAlignment="Left" Text="Login:" TextWrapping="Wrap" VerticalAlignment="Top" Height="44" Width="140" FontSize="24"/>
+            <TextBlock x:Name="PassTxt" HorizontalAlignment="Left" Margin="0,108,0,0" Text="Password:" TextWrapping="Wrap" VerticalAlignment="Top" Height="44" Width="140" FontSize="24"/>
+            <Button x:Name="ConfirmBtn" Content="Confirm" Margin="52,219,0,0" Height="46" Width="148" AutomationProperties.AcceleratorKey="Enter" Click="Save_Click" VerticalAlignment="Top"/>
+            <Button x:Name="ExtraBtn" Content="Extra" Margin="301,219,0,0" Width="148" Height="46" Click="ExtraBtn_Click" VerticalAlignment="Top"/>
+            <TextBlock x:Name="SuccessBlock" HorizontalAlignment="Left" Margin="513,227,0,0" Text="Successfully saved" TextWrapping="Wrap" VerticalAlignment="Top" Height="65" Width="436" FontSize="48" FocusVisualPrimaryBrush="Black" FocusVisualSecondaryBrush="#9923FF00" Foreground="#9900A0FB" FontWeight="Normal" SelectionHighlightColor="#FF874040" Visibility="Collapsed"/>
+            <ProgressRing x:Name="ProgRing" HorizontalAlignment="Left" Margin="566,219,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Height="107" Width="140" FontSize="12" Canvas.ZIndex="3">
+                <ProgressRing.RenderTransform>
+                    <CompositeTransform ScaleX="1" ScaleY="1"/>
+                </ProgressRing.RenderTransform>
+            </ProgressRing>
+            
+                <Grid.Transitions>
+                    <TransitionCollection>
+                        <RepositionThemeTransition/>
+                    </TransitionCollection>
+                </Grid.Transitions>
+
+            
+            
+
+        </Grid>
+
+
     </Grid>
 </Page>

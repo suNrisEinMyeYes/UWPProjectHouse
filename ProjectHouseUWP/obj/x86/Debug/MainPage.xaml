@@ -4,14 +4,14 @@
     xmlns:local="using:ProjectHouseUWP"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:Custom="using:Microsoft.Toolkit.Uwp.UI.Controls"
+    xmlns:Custom="using:Microsoft.Toolkit.Uwp.UI.Controls" xmlns:Windows10version1809="http://schemas.microsoft.com/winfx/2006/xaml/presentation?IsApiContractPresent(Windows.Foundation.UniversalApiContract, 7)"
     x:Class="ProjectHouseUWP.MainPage"
    
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <NavigationView x:ConnectionId='2' x:Name="nvSample"                                                   >
+        <NavigationView x:ConnectionId='2' x:Name="nvSample"                                                    Windows10version1809:PaneDisplayMode="LeftCompact">
             <NavigationView.MenuItems>
                 <NavigationViewItem Icon="Play" Content="Menu Item1" Tag="SamplePage1" />
                 <NavigationViewItem Icon="Save" Content="Menu Item2" Tag="SamplePage2" />

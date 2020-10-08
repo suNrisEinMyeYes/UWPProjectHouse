@@ -22,7 +22,7 @@
           HeadersVisibility="Column"
           AlternatingRowBackground="LightGray"
           RowEditEnding="TestDataGrid_RowEditEnding"
-          SelectionMode="Single">
+          SelectionMode="Single" HorizontalScrollBarVisibility="Visible" Margin="0,78,0,0">
             <controls:DataGrid.Columns >
                 <controls:DataGridTextColumn Header="Название"
                                          Binding="{Binding NameOfPlace}"/>
@@ -42,14 +42,20 @@
                 <controls:DataGridTextColumn Header="GUID площадки"
                                          Binding="{Binding PlaceGuid}"/>
 
-                <controls:DataGridTextColumn Header="АПИ ключ"
-                                         Binding="{Binding APIKey}"/>
-
             </controls:DataGrid.Columns>
         </controls:DataGrid>
-        <Button x:Name="SaveChanges" Content="Save changes" Margin="397,664,0,0" VerticalAlignment="Top" Height="55" Width="116" Click="SaveChanges_Click"/>
-        <Button x:Name="DeleteBtn" Content="Delete" Margin="257,664,0,0" VerticalAlignment="Top" Height="55" Width="116" Click="DeleteBtn_Click"/>
-        <Button x:Name="AddBtn" Content="Add" Margin="121,664,0,0" VerticalAlignment="Top" Width="116" Height="55" Click="AddBtn_Click"/>
-        <Button x:Name="XMLBtn" Content="XMLPost" Margin="538,664,0,0" VerticalAlignment="Top" Width="116" Height="55" Click="XMLBtn_Click"/>
+        <Button x:Name="SaveChanges" Content="Save changes" Margin="663,10,0,0" VerticalAlignment="Top" Height="55" Width="116" Click="SaveChanges_Click"/>
+        <Button x:Name="DeleteBtn" Content="Delete" Margin="523,10,0,0" VerticalAlignment="Top" Height="55" Width="116" Click="DeleteBtn_Click"/>
+        <Button x:Name="AddBtn" Content="Add" Margin="387,10,0,0" VerticalAlignment="Top" Width="116" Height="55" Click="AddBtn_Click"/>
+        <Button x:Name="XMLBtn" Content="XMLPost" Margin="804,10,0,0" VerticalAlignment="Top" Width="116" Height="55" Click="XMLBtn_Click"/>
+       
+        <ContentDialog x:Name="ProblemWithParseDia"
+        Title="Failed to parse answer. This may means, you send wrong data or XML file is damaged."
+        
+        CloseButtonText="Close"
+        DefaultButton="Primary">
+
+        </ContentDialog>
     </Grid>
+    
 </Page>

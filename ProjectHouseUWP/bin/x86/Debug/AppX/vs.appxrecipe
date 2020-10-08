@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\Администратор\source\repos\ProjectHouseUWP\ProjectHouseUWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-10-02T04:27:10.927</Modified>
+      <Modified>2020-10-08T06:49:10.196</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Администратор\source\repos\ProjectHouseUWP\ProjectHouseUWP\bin\x86\Debug\ProjectHouseUWP.exe">
       <PackagePath>entrypoint\ProjectHouseUWP.exe</PackagePath>
-      <Modified>2020-10-02T03:54:59.892</Modified>
+      <Modified>2020-10-08T06:49:08.825</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Администратор\.nuget\packages\colorcode.core\2.0.6\lib\netstandard1.4\ColorCode.Core.dll">
       <PackagePath>ColorCode.Core.dll</PackagePath>
@@ -118,6 +118,14 @@
       <PackagePath>Properties\Default.rd.xml</PackagePath>
       <Modified>2020-09-17T04:38:06.366</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Администратор\source\repos\ProjectHouseUWP\ProjectHouseUWP\XMLFile1.xml">
+      <PackagePath>XMLFile1.xml</PackagePath>
+      <Modified>2020-10-08T05:16:27.991</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Администратор\source\repos\ProjectHouseUWP\ProjectHouseUWP\XMLFile2.xml">
+      <PackagePath>XMLFile2.xml</PackagePath>
+      <Modified>2020-10-08T06:30:37.216</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Администратор\source\repos\ProjectHouseUWP\ProjectHouseUWP\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
       <Modified>2020-09-11T05:05:55.715</Modified>
@@ -154,27 +162,27 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Администратор\source\repos\ProjectHouseUWP\ProjectHouseUWP\bin\x86\Debug\ProjectHouseUWP.xr.xml">
       <PackagePath>ProjectHouseUWP.xr.xml</PackagePath>
-      <Modified>2020-09-21T09:11:13.774</Modified>
+      <Modified>2020-10-08T05:58:55.899</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Администратор\source\repos\ProjectHouseUWP\ProjectHouseUWP\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2020-10-02T03:44:18.614</Modified>
+      <Modified>2020-10-08T06:42:24.149</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Администратор\source\repos\ProjectHouseUWP\ProjectHouseUWP\bin\x86\Debug\DataGrid.xbf">
       <PackagePath>DataGrid.xbf</PackagePath>
-      <Modified>2020-10-02T03:44:18.615</Modified>
+      <Modified>2020-10-08T06:42:24.150</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Администратор\source\repos\ProjectHouseUWP\ProjectHouseUWP\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2020-10-02T03:44:18.615</Modified>
+      <Modified>2020-10-08T06:42:24.150</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Администратор\source\repos\ProjectHouseUWP\ProjectHouseUWP\bin\x86\Debug\Settings.xbf">
       <PackagePath>Settings.xbf</PackagePath>
-      <Modified>2020-10-02T03:44:18.615</Modified>
+      <Modified>2020-10-08T06:42:24.150</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Администратор\source\repos\ProjectHouseUWP\ProjectHouseUWP\bin\x86\Debug\VSD.xbf">
       <PackagePath>VSD.xbf</PackagePath>
-      <Modified>2020-10-02T03:44:18.615</Modified>
+      <Modified>2020-10-08T06:42:24.150</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.18362.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -182,11 +190,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Администратор\source\repos\ProjectHouseUWP\ProjectHouseUWP\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2020-09-30T04:41:31.522</Modified>
+      <Modified>2020-10-08T06:41:37.320</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Администратор\source\repos\ProjectHouseUWP\ProjectHouseUWP\bin\x86\Debug\Core\ProjectHouseUWP.exe">
       <PackagePath>ProjectHouseUWP.exe</PackagePath>
-      <Modified>2020-10-02T04:27:10.917</Modified>
+      <Modified>2020-10-08T06:49:10.186</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

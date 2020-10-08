@@ -13,6 +13,7 @@ using Windows.UI.Xaml.Controls.Primitives;
 using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
+using Windows.UI.Xaml.Media.Animation;
 using Windows.UI.Xaml.Navigation;
 
 // Документацию по шаблону элемента "Пустая страница" см. по адресу https://go.microsoft.com/fwlink/?LinkId=234238
@@ -98,6 +99,23 @@ namespace ProjectHouseUWP
                 }
             }
             
+        }
+
+        private void ExtraBtn_Click(object sender, RoutedEventArgs e)
+        {
+            if (ExtraGrid.Visibility == Visibility.Collapsed)
+            {
+                MainGrid.Margin = new Thickness(36, 250, 0, 0);
+                ExtraGrid.Margin = new Thickness(36, 40, 0, 0);
+                ExtraGrid.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                MainGrid.Margin = new Thickness(36, 40, 0, 0);
+                ExtraGrid.Margin = new Thickness(-600, 40, 0, 0);
+                ExtraGrid.Visibility = Visibility.Collapsed;
+            }
+           
         }
     }
 }

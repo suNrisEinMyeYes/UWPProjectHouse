@@ -39,6 +39,7 @@ namespace ProjectHouseUWP
         }
         private async void OnPageLoaded(object sender, RoutedEventArgs e)
         {
+            //TestDataGrid.MaxWidth = DataGrid.ActualWidthProperty;
             try
             {
                 var info = await GetProductsAsync(ConnHolder.GetConnStr());
@@ -162,10 +163,51 @@ namespace ProjectHouseUWP
         private async void XMLBtn_Click(object sender, RoutedEventArgs e)
         {
             var item = (Model)TestDataGrid.SelectedItem;
-            await HttpRest.InfoPostAsync(IenumerationPaths.PostFirstTime, item);
-            await HttpRest.InfoPostAsync(IenumerationPaths.PostToCheck, item);
+            var response = await HttpRest.InfoPostAsync(IenumerationPaths.PostFirstTime, item);
+            Debug.WriteLine(response);
             
+            var filledModel = XmlParser.Desirialize(response);
             
+            if (filledModel.Body.submitApplicationResponse != null)
+            {
+                if(filledModel.Body.submitApplicationResponse.application.status == "ACCEPTED")
+                {
+                    foreach (var elem in Info)
+                    {
+                        if (elem == (Model)TestDataGrid.SelectedItem)
+                        {
+                            elem.AppId = filledModel.Body.submitApplicationResponse.application.applicationId;
+                            var Query = $"Update Merc_xs set AppID=\'{elem.AppId}\' where CodM= {elem.CodeFil} and CodB= {elem.CodePred}";
+                            await ConnHolder.NonQueryAsyncConnect(Query);
+                            Debug.WriteLine("Updated");
+                        }
+                    }
+                    // = filledModel.Body.submitApplicationResponse.application.applicationId;
+                    var xml = XmlParser.Desirialize(await HttpRest.InfoPostAsync(IenumerationPaths.PostToCheck, item));
+                    while (xml.Body.receiveApplicationResultResponse.application.status == "IN_PROCESS")
+                    {
+                        xml = XmlParser.Desirialize(await HttpRest.InfoPostAsync(IenumerationPaths.PostToCheck, item));
+                    }
+                    
+                    Debug.WriteLine(xml.Body.receiveApplicationResultResponse.application.status);
+                }
+            }
+            else
+            {
+
+                ContentDialog dialog = new ContentDialog()
+                {
+                    Title = "Error",
+                    Content = "Failed to parse answer. This may means, you send wrong data or XML file is damaged.",
+                    PrimaryButtonText = "ОК",
+                };
+                await dialog.ShowAsync();
+                
+            }
+
+            //
+
+
 
         }
     }

@@ -88,6 +88,12 @@
     <AppxPackagedFile Include="C:\Users\Администратор\source\repos\ProjectHouseUWP\ProjectHouseUWP\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Администратор\source\repos\ProjectHouseUWP\ProjectHouseUWP\XMLFile1.xml">
+      <PackagePath>XMLFile1.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Администратор\source\repos\ProjectHouseUWP\ProjectHouseUWP\XMLFile2.xml">
+      <PackagePath>XMLFile2.xml</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Администратор\source\repos\ProjectHouseUWP\ProjectHouseUWP\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>

@@ -1,0 +1,14 @@
+﻿<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+	<soap:Body>
+		<ws:submitApplicationResponse xmlns:ws="http://api.vetrf.ru/schema/cdm/application/ws-definitions">
+			<application xmlns="http://api.vetrf.ru/schema/cdm/application">
+				<applicationId>0de32e15-61e0-4ae7-a006-f327f4abed39</applicationId>
+				<status>ACCEPTED</status>
+				<serviceId>mercury-g2b.service</serviceId>
+				<issuerId>6f8c7b1f-f79b-4228-8db4-86741498f0a2</issuerId>
+				<issueDate>2020-10-08T12:13:47+03:00</issueDate>
+				<rcvDate>2020-10-08T08:16:16+03:00</rcvDate>
+			</application>
+		</ws:submitApplicationResponse>
+	</soap:Body>
+</soap:Envelope>

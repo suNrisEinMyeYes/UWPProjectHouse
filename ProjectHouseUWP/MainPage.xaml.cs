@@ -25,6 +25,7 @@ namespace ProjectHouseUWP
         public MainPage()
         {
             this.InitializeComponent();
+
         }
         private void NavigationView_SelectionChanged(NavigationView sender, NavigationViewSelectionChangedEventArgs args)
         {
