@@ -183,13 +183,20 @@ namespace ProjectHouseUWP
                         }
                     }
                     // = filledModel.Body.submitApplicationResponse.application.applicationId;
-                    var xml = XmlParser.Desirialize(await HttpRest.InfoPostAsync(IenumerationPaths.PostToCheck, item));
-                    while (xml.Body.receiveApplicationResultResponse.application.status == "IN_PROCESS")
+                    var xml = XmlParser.DesirializeBig(await HttpRest.InfoPostAsync(IenumerationPaths.PostToCheck, item));
+                    while (xml.Body.ReceiveApplicationResultResponse.Application.Status == "IN_PROCESS")
                     {
-                        xml = XmlParser.Desirialize(await HttpRest.InfoPostAsync(IenumerationPaths.PostToCheck, item));
+                        xml = XmlParser.DesirializeBig(await HttpRest.InfoPostAsync(IenumerationPaths.PostToCheck, item));
                     }
                     
-                    Debug.WriteLine(xml.Body.receiveApplicationResultResponse.application.status);
+                    Debug.WriteLine(xml.Body.ReceiveApplicationResultResponse.Application.Status);
+                    ContentDialog dialog = new ContentDialog()
+                    {
+                        Title = "OK",
+                        Content = xml.Body.ReceiveApplicationResultResponse.Application.Status,
+                        PrimaryButtonText = "ОК",
+                    };
+                    await dialog.ShowAsync();
                 }
             }
             else

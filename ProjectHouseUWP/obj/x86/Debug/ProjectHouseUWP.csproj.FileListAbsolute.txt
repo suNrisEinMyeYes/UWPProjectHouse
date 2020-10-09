@@ -98,3 +98,4 @@ C:\Users\Администратор\source\repos\ProjectHouseUWP\ProjectHouseUWP
 C:\Users\Администратор\source\repos\ProjectHouseUWP\ProjectHouseUWP\obj\x86\Debug\ProjectArchitectures.txt
 C:\Users\Администратор\source\repos\ProjectHouseUWP\ProjectHouseUWP\obj\x86\Debug\.winmd_cache\$Microsoft.Graphics.Canvas.winmd_637214282760000000.json
 C:\Users\Администратор\source\repos\ProjectHouseUWP\ProjectHouseUWP\obj\x86\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_636885058160000000.json
+C:\Users\Администратор\source\repos\ProjectHouseUWP\ProjectHouseUWP\obj\x86\Debug\Microsoft.UI.Xaml.pri.xml

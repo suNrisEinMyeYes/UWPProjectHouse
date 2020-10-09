@@ -19,7 +19,7 @@
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
     <LayoutDir>C:\Users\Администратор\source\repos\ProjectHouseUWP\ProjectHouseUWP\bin\x86\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>77AD95A01ABA8D9F74A7E9561E45D6E9FD82523CE869D7FA0114688993DCECC9</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>B8C20BF01039DFB9E1FA63DF6B4A1F3EA69A95DEDF650F44E093A579FA6F637F</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>e2f55b97-1c3b-4809-88b4-7af8bd36c9ad_1.0.0.0_x86__qq60qpavyap0y</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>e2f55b97-1c3b-4809-88b4-7af8bd36c9ad_qq60qpavyap0y!App</RegisteredUserModeAppID>
     <RegisteredPackageID>e2f55b97-1c3b-4809-88b4-7af8bd36c9ad</RegisteredPackageID>
@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\Администратор\source\repos\ProjectHouseUWP\ProjectHouseUWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-10-08T06:49:10.196</Modified>
+      <Modified>2020-10-09T05:27:41.322</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Администратор\source\repos\ProjectHouseUWP\ProjectHouseUWP\bin\x86\Debug\ProjectHouseUWP.exe">
       <PackagePath>entrypoint\ProjectHouseUWP.exe</PackagePath>
-      <Modified>2020-10-08T06:49:08.825</Modified>
+      <Modified>2020-10-09T05:27:39.213</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Администратор\.nuget\packages\colorcode.core\2.0.6\lib\netstandard1.4\ColorCode.Core.dll">
       <PackagePath>ColorCode.Core.dll</PackagePath>
@@ -166,38 +166,91 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Администратор\source\repos\ProjectHouseUWP\ProjectHouseUWP\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2020-10-08T06:42:24.149</Modified>
+      <Modified>2020-10-09T05:27:38.937</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Администратор\source\repos\ProjectHouseUWP\ProjectHouseUWP\bin\x86\Debug\DataGrid.xbf">
       <PackagePath>DataGrid.xbf</PackagePath>
-      <Modified>2020-10-08T06:42:24.150</Modified>
+      <Modified>2020-10-09T05:27:38.937</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Администратор\source\repos\ProjectHouseUWP\ProjectHouseUWP\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2020-10-08T06:42:24.150</Modified>
+      <Modified>2020-10-09T05:27:38.937</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Администратор\source\repos\ProjectHouseUWP\ProjectHouseUWP\bin\x86\Debug\Settings.xbf">
       <PackagePath>Settings.xbf</PackagePath>
-      <Modified>2020-10-08T06:42:24.150</Modified>
+      <Modified>2020-10-09T05:27:38.937</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Администратор\source\repos\ProjectHouseUWP\ProjectHouseUWP\bin\x86\Debug\VSD.xbf">
       <PackagePath>VSD.xbf</PackagePath>
-      <Modified>2020-10-08T06:42:24.150</Modified>
+      <Modified>2020-10-09T05:27:38.937</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.18362.0\\redist\Debug\x86\ucrtbased.dll">
+      <PackagePath>ucrtbased.dll</PackagePath>
+      <Modified>2019-03-18T11:43:58.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.18362.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
       <Modified>2019-03-18T10:33:42.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Администратор\.nuget\packages\microsoft.ui.xaml\2.4.3\buildTransitive\..\lib\uap10.0\Microsoft.UI.Xaml.winmd">
+      <PackagePath>WinMetadata\Microsoft.UI.Xaml.winmd</PackagePath>
+      <Modified>2020-07-09T17:07:08.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Администратор\source\repos\ProjectHouseUWP\ProjectHouseUWP\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2020-10-08T06:41:37.320</Modified>
+      <Modified>2020-10-09T04:39:07.097</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Администратор\source\repos\ProjectHouseUWP\ProjectHouseUWP\bin\x86\Debug\Core\ProjectHouseUWP.exe">
       <PackagePath>ProjectHouseUWP.exe</PackagePath>
-      <Modified>2020-10-08T06:49:10.186</Modified>
+      <Modified>2020-10-09T05:27:41.311</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
+    <ResolvedSDKReference Include="C:\Users\Администратор\.nuget\packages\microsoft.ui.xaml\2.4.3\buildTransitive\..\tools\AppX\x86\Release\Microsoft.UI.Xaml.2.4.appx">
+      <Name>Microsoft.UI.Xaml.2.4</Name>
+      <Version>2.42007.9001.0</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.UI.Xaml.2.4, MinVersion = 2.42007.9001.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\Администратор\.nuget\packages\microsoft.ui.xaml\2.4.3\buildTransitive\..\tools\AppX\x86\Release\Microsoft.UI.Xaml.2.4.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Users\Администратор\.nuget\packages\microsoft.ui.xaml\2.4.3\buildTransitive\..\tools\AppX\x86\Release\Microsoft.UI.Xaml.2.4.appx">
+      <Name>Microsoft.UI.Xaml.2.4</Name>
+      <Version>2.42007.9001.0</Version>
+      <Architecture>Win32</Architecture>
+      <FrameworkIdentity>Name = Microsoft.UI.Xaml.2.4, MinVersion = 2.42007.9001.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\Администратор\.nuget\packages\microsoft.ui.xaml\2.4.3\buildTransitive\..\tools\AppX\x86\Release\Microsoft.UI.Xaml.2.4.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Users\Администратор\.nuget\packages\microsoft.ui.xaml\2.4.3\buildTransitive\..\tools\AppX\x64\Release\Microsoft.UI.Xaml.2.4.appx">
+      <Name>Microsoft.UI.Xaml.2.4</Name>
+      <Version>2.42007.9001.0</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.UI.Xaml.2.4, MinVersion = 2.42007.9001.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\Администратор\.nuget\packages\microsoft.ui.xaml\2.4.3\buildTransitive\..\tools\AppX\x64\Release\Microsoft.UI.Xaml.2.4.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Users\Администратор\.nuget\packages\microsoft.ui.xaml\2.4.3\buildTransitive\..\tools\AppX\arm\Release\Microsoft.UI.Xaml.2.4.appx">
+      <Name>Microsoft.UI.Xaml.2.4</Name>
+      <Version>2.42007.9001.0</Version>
+      <Architecture>arm</Architecture>
+      <FrameworkIdentity>Name = Microsoft.UI.Xaml.2.4, MinVersion = 2.42007.9001.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\Администратор\.nuget\packages\microsoft.ui.xaml\2.4.3\buildTransitive\..\tools\AppX\arm\Release\Microsoft.UI.Xaml.2.4.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Users\Администратор\.nuget\packages\microsoft.ui.xaml\2.4.3\buildTransitive\..\tools\AppX\arm64\Release\Microsoft.UI.Xaml.2.4.appx">
+      <Name>Microsoft.UI.Xaml.2.4</Name>
+      <Version>2.42007.9001.0</Version>
+      <Architecture>arm64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.UI.Xaml.2.4, MinVersion = 2.42007.9001.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\Администратор\.nuget\packages\microsoft.ui.xaml\2.4.3\buildTransitive\..\tools\AppX\arm64\Release\Microsoft.UI.Xaml.2.4.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
     <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.10\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
       <Name>Microsoft.NET.CoreRuntime.2.2</Name>
       <Version>2.2.27902.3</Version>

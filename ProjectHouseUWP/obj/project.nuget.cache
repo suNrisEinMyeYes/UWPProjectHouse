@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "XJEfYfIXsqB9m1Ue1vXw+AjsUo1fqQO4SA54ks/GkG1Biz86b2lKne/foBelAp8m4zkxgoKYrzBm/i6Qn5QMWA==",
+  "dgSpecHash": "YhIJOo2LQn5NeNN7IqQk77FVipU73XztFF9HoIeoZGbwWfR6s+z9NzwwUozhaNiwWOiW1Fuk0wfQO44QX3cWYQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Администратор\\source\\repos\\ProjectHouseUWP\\ProjectHouseUWP\\ProjectHouseUWP.csproj",
   "expectedPackageFiles": [
@@ -19,6 +19,7 @@
     "C:\\Users\\Администратор\\.nuget\\packages\\microsoft.toolkit.uwp.ui.animations\\6.1.1\\microsoft.toolkit.uwp.ui.animations.6.1.1.nupkg.sha512",
     "C:\\Users\\Администратор\\.nuget\\packages\\microsoft.toolkit.uwp.ui.controls\\6.1.1\\microsoft.toolkit.uwp.ui.controls.6.1.1.nupkg.sha512",
     "C:\\Users\\Администратор\\.nuget\\packages\\microsoft.toolkit.uwp.ui.controls.datagrid\\6.1.1\\microsoft.toolkit.uwp.ui.controls.datagrid.6.1.1.nupkg.sha512",
+    "C:\\Users\\Администратор\\.nuget\\packages\\microsoft.ui.xaml\\2.4.3\\microsoft.ui.xaml.2.4.3.nupkg.sha512",
     "C:\\Users\\Администратор\\.nuget\\packages\\microsoft.xaml.behaviors.uwp.managed\\2.0.1\\microsoft.xaml.behaviors.uwp.managed.2.0.1.nupkg.sha512",
     "C:\\Users\\Администратор\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
     "C:\\Users\\Администратор\\.nuget\\packages\\newtonsoft.json\\10.0.3\\newtonsoft.json.10.0.3.nupkg.sha512",

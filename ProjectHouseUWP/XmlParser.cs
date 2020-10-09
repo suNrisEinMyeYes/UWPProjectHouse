@@ -20,5 +20,16 @@ namespace ProjectHouseUWP
             }
             return result;
         }
+
+        public static class1.Envelope DesirializeBig(string xml)
+        {
+            var serializer = new XmlSerializer(typeof(class1.Envelope));
+            class1.Envelope result;
+            using (TextReader reader = new StringReader(xml))
+            {
+                result = (class1.Envelope)serializer.Deserialize(reader);
+            }
+            return result;
+        }
     }
 }

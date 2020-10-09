@@ -48,6 +48,10 @@
             "Microsoft.Toolkit.Uwp.UI.Controls.DataGrid": {
               "target": "Package",
               "version": "[6.1.1, )"
+            },
+            "Microsoft.UI.Xaml": {
+              "target": "Package",
+              "version": "[2.4.3, )"
             }
           },
           "imports": [
