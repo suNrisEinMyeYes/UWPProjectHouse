@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml;
 using System.Xml.Serialization;
 
 namespace ProjectHouseUWP
@@ -30,6 +31,18 @@ namespace ProjectHouseUWP
                 result = (class1.Envelope)serializer.Deserialize(reader);
             }
             return result;
+        }
+
+        public static void Serialize(class1.Envelope xml)
+        {
+            XmlSerializer xmlSerializer = new XmlSerializer(xml.GetType());
+            using (FileStream fs = new FileStream(Windows.Storage.ApplicationData.Current.LocalFolder.Path + "\\" + "Out.xml", FileMode.OpenOrCreate))
+            {
+                xmlSerializer.Serialize(fs, xml);
+
+                Console.WriteLine("Объект сериализован");
+            }
+
         }
     }
 }

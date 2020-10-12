@@ -426,7 +426,7 @@ namespace class1
 		[XmlElement(ElementName = "vetDocument", Namespace = "http://api.vetrf.ru/schema/cdm/mercury/vet-document/v2")]
 		public List<VetDocument> VetDocument { get; set; }
 		[XmlAttribute(AttributeName = "count")]
-		public string Count { get; set; }
+		public int Count { get; set; }
 		[XmlAttribute(AttributeName = "total")]
 		public string Total { get; set; }
 		[XmlAttribute(AttributeName = "offset")]

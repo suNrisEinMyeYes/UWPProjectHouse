@@ -1,1 +1,1 @@
-C:\Users\Администратор\source\repos\ProjectHouseUWP\ProjectHouseUWP\ProjectHouseUWP.csproj;x86
+C:\Users\Администратор\Desktop\clonemy\UWPProjectHouse\ProjectHouseUWP\ProjectHouseUWP.csproj;x86

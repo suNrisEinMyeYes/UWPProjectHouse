@@ -10,7 +10,7 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>e2f55b97-1c3b-4809-88b4-7af8bd36c9ad</PackageIdentityName>
     <PackageIdentityPublisher>CN=Администратор</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\Администратор\source\repos\ProjectHouseUWP\ProjectHouseUWP\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\Администратор\Desktop\clonemy\UWPProjectHouse\ProjectHouseUWP\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
@@ -18,7 +18,7 @@
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\Администратор\source\repos\ProjectHouseUWP\ProjectHouseUWP\bin\x86\Debug\AppX</LayoutDir>
+    <LayoutDir>C:\Users\Администратор\Desktop\clonemy\UWPProjectHouse\ProjectHouseUWP\bin\x86\Debug\AppX</LayoutDir>
     <RegisteredManifestChecksum>B8C20BF01039DFB9E1FA63DF6B4A1F3EA69A95DEDF650F44E093A579FA6F637F</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>e2f55b97-1c3b-4809-88b4-7af8bd36c9ad_1.0.0.0_x86__qq60qpavyap0y</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>e2f55b97-1c3b-4809-88b4-7af8bd36c9ad_qq60qpavyap0y!App</RegisteredUserModeAppID>
@@ -27,16 +27,16 @@
     <RegisteredVersion>1.0.0.0</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Администратор\source\repos\ProjectHouseUWP\ProjectHouseUWP\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\Администратор\Desktop\clonemy\UWPProjectHouse\ProjectHouseUWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-10-09T05:27:41.322</Modified>
+      <Modified>2020-10-12T05:34:42.752</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\Администратор\source\repos\ProjectHouseUWP\ProjectHouseUWP\bin\x86\Debug\ProjectHouseUWP.exe">
+    <AppxPackagedFile Include="C:\Users\Администратор\Desktop\clonemy\UWPProjectHouse\ProjectHouseUWP\bin\x86\Debug\ProjectHouseUWP.exe">
       <PackagePath>entrypoint\ProjectHouseUWP.exe</PackagePath>
-      <Modified>2020-10-09T05:27:39.213</Modified>
+      <Modified>2020-10-12T05:34:40.855</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Администратор\.nuget\packages\colorcode.core\2.0.6\lib\netstandard1.4\ColorCode.Core.dll">
       <PackagePath>ColorCode.Core.dll</PackagePath>
@@ -114,75 +114,75 @@
       <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls.DataGrid\Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.xr.xml</PackagePath>
       <Modified>2020-08-12T15:03:04.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Администратор\source\repos\ProjectHouseUWP\ProjectHouseUWP\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\Администратор\Desktop\clonemy\UWPProjectHouse\ProjectHouseUWP\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
-      <Modified>2020-09-17T04:38:06.366</Modified>
+      <Modified>2020-10-12T03:40:36.171</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Администратор\source\repos\ProjectHouseUWP\ProjectHouseUWP\XMLFile1.xml">
+    <AppxPackagedFile Include="C:\Users\Администратор\Desktop\clonemy\UWPProjectHouse\ProjectHouseUWP\XMLFile1.xml">
       <PackagePath>XMLFile1.xml</PackagePath>
-      <Modified>2020-10-08T05:16:27.991</Modified>
+      <Modified>2020-10-12T03:40:36.174</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Администратор\source\repos\ProjectHouseUWP\ProjectHouseUWP\XMLFile2.xml">
+    <AppxPackagedFile Include="C:\Users\Администратор\Desktop\clonemy\UWPProjectHouse\ProjectHouseUWP\XMLFile2.xml">
       <PackagePath>XMLFile2.xml</PackagePath>
-      <Modified>2020-10-08T06:30:37.216</Modified>
+      <Modified>2020-10-12T03:40:36.178</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Администратор\source\repos\ProjectHouseUWP\ProjectHouseUWP\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Администратор\Desktop\clonemy\UWPProjectHouse\ProjectHouseUWP\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
-      <Modified>2020-09-11T05:05:55.715</Modified>
+      <Modified>2020-10-12T03:40:36.151</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Администратор\source\repos\ProjectHouseUWP\ProjectHouseUWP\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Администратор\Desktop\clonemy\UWPProjectHouse\ProjectHouseUWP\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-10-02T04:26:59.332</Modified>
+      <Modified>2020-10-12T03:40:36.154</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Администратор\source\repos\ProjectHouseUWP\ProjectHouseUWP\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Администратор\Desktop\clonemy\UWPProjectHouse\ProjectHouseUWP\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-09-11T05:05:55.720</Modified>
+      <Modified>2020-10-12T03:40:36.155</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Администратор\source\repos\ProjectHouseUWP\ProjectHouseUWP\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Администратор\Desktop\clonemy\UWPProjectHouse\ProjectHouseUWP\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-09-11T05:05:55.721</Modified>
+      <Modified>2020-10-12T03:40:36.156</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Администратор\source\repos\ProjectHouseUWP\ProjectHouseUWP\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\Администратор\Desktop\clonemy\UWPProjectHouse\ProjectHouseUWP\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-09-11T05:05:55.722</Modified>
+      <Modified>2020-10-12T03:40:36.156</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Администратор\source\repos\ProjectHouseUWP\ProjectHouseUWP\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\Администратор\Desktop\clonemy\UWPProjectHouse\ProjectHouseUWP\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-09-11T05:05:55.723</Modified>
+      <Modified>2020-10-12T03:40:36.156</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Администратор\source\repos\ProjectHouseUWP\ProjectHouseUWP\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Администратор\Desktop\clonemy\UWPProjectHouse\ProjectHouseUWP\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-09-11T05:05:55.724</Modified>
+      <Modified>2020-10-12T03:40:36.157</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Администратор\source\repos\ProjectHouseUWP\ProjectHouseUWP\bin\x86\Debug\ProjectHouseUWP.xr.xml">
+    <AppxPackagedFile Include="C:\Users\Администратор\Desktop\clonemy\UWPProjectHouse\ProjectHouseUWP\bin\x86\Debug\ProjectHouseUWP.xr.xml">
       <PackagePath>ProjectHouseUWP.xr.xml</PackagePath>
-      <Modified>2020-10-08T05:58:55.899</Modified>
+      <Modified>2020-10-12T04:37:52.208</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Администратор\source\repos\ProjectHouseUWP\ProjectHouseUWP\bin\x86\Debug\App.xbf">
+    <AppxPackagedFile Include="C:\Users\Администратор\Desktop\clonemy\UWPProjectHouse\ProjectHouseUWP\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2020-10-09T05:27:38.937</Modified>
+      <Modified>2020-10-12T05:34:40.603</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Администратор\source\repos\ProjectHouseUWP\ProjectHouseUWP\bin\x86\Debug\DataGrid.xbf">
+    <AppxPackagedFile Include="C:\Users\Администратор\Desktop\clonemy\UWPProjectHouse\ProjectHouseUWP\bin\x86\Debug\DataGrid.xbf">
       <PackagePath>DataGrid.xbf</PackagePath>
-      <Modified>2020-10-09T05:27:38.937</Modified>
+      <Modified>2020-10-12T05:34:40.603</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Администратор\source\repos\ProjectHouseUWP\ProjectHouseUWP\bin\x86\Debug\MainPage.xbf">
+    <AppxPackagedFile Include="C:\Users\Администратор\Desktop\clonemy\UWPProjectHouse\ProjectHouseUWP\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2020-10-09T05:27:38.937</Modified>
+      <Modified>2020-10-12T05:34:40.604</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Администратор\source\repos\ProjectHouseUWP\ProjectHouseUWP\bin\x86\Debug\Settings.xbf">
+    <AppxPackagedFile Include="C:\Users\Администратор\Desktop\clonemy\UWPProjectHouse\ProjectHouseUWP\bin\x86\Debug\Settings.xbf">
       <PackagePath>Settings.xbf</PackagePath>
-      <Modified>2020-10-09T05:27:38.937</Modified>
+      <Modified>2020-10-12T05:34:40.604</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Администратор\source\repos\ProjectHouseUWP\ProjectHouseUWP\bin\x86\Debug\VSD.xbf">
+    <AppxPackagedFile Include="C:\Users\Администратор\Desktop\clonemy\UWPProjectHouse\ProjectHouseUWP\bin\x86\Debug\VSD.xbf">
       <PackagePath>VSD.xbf</PackagePath>
-      <Modified>2020-10-09T05:27:38.937</Modified>
+      <Modified>2020-10-12T05:34:40.604</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.18362.0\\redist\Debug\x86\ucrtbased.dll">
       <PackagePath>ucrtbased.dll</PackagePath>
@@ -196,13 +196,13 @@
       <PackagePath>WinMetadata\Microsoft.UI.Xaml.winmd</PackagePath>
       <Modified>2020-07-09T17:07:08.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Администратор\source\repos\ProjectHouseUWP\ProjectHouseUWP\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\Администратор\Desktop\clonemy\UWPProjectHouse\ProjectHouseUWP\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2020-10-09T04:39:07.097</Modified>
+      <Modified>2020-10-12T03:46:06.265</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Администратор\source\repos\ProjectHouseUWP\ProjectHouseUWP\bin\x86\Debug\Core\ProjectHouseUWP.exe">
+    <AppxPackagedFile Include="C:\Users\Администратор\Desktop\clonemy\UWPProjectHouse\ProjectHouseUWP\bin\x86\Debug\Core\ProjectHouseUWP.exe">
       <PackagePath>ProjectHouseUWP.exe</PackagePath>
-      <Modified>2020-10-09T05:27:41.311</Modified>
+      <Modified>2020-10-12T05:34:42.730</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

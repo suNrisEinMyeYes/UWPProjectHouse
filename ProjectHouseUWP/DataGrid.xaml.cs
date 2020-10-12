@@ -188,15 +188,16 @@ namespace ProjectHouseUWP
                     {
                         xml = XmlParser.DesirializeBig(await HttpRest.InfoPostAsync(IenumerationPaths.PostToCheck, item));
                     }
-                    
-                    Debug.WriteLine(xml.Body.ReceiveApplicationResultResponse.Application.Status);
-                    ContentDialog dialog = new ContentDialog()
+                    XmlParser.Serialize(xml);
+                    contentFrame.Navigate(typeof(VSD), xml);
+                    /*ContentDialog dialog = new ContentDialog()
                     {
                         Title = "OK",
                         Content = xml.Body.ReceiveApplicationResultResponse.Application.Status,
                         PrimaryButtonText = "ОК",
                     };
                     await dialog.ShowAsync();
+                    */
                 }
             }
             else

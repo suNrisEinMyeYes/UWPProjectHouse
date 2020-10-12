@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -22,11 +23,27 @@ namespace ProjectHouseUWP
     /// </summary>
     public sealed partial class VSD : Page
     {
+        private class1.Envelope xml;
         public VSD()
         {
             this.InitializeComponent();
         }
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            if (e.Parameter != null)
+            {
+                xml = (class1.Envelope)e.Parameter;
+            }
+            
+                foreach (var item in xml.Body.ReceiveApplicationResultResponse.Application.Result.GetVetDocumentChangesListResponse.VetDocumentList.VetDocument)
+                {
+                    test.Text += item.Uuid + "\n";
+                }
+                
+            
+            
+        }
 
-        
+
     }
 }

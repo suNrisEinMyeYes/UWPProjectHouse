@@ -58,6 +58,8 @@ namespace ProjectHouseUWP
                     text += "<bs:endDate>" + now.ToString("yyyy-MM-dd") + "T23:59:59</bs:endDate>\n";
                     text += "</bs:updateDateInterval>\n";
                     text += "<dt:enterpriseGuid>" + selected.CompanyGuid + "</dt:enterpriseGuid>\n";
+                    text += "<vd:vetDocumentType>INCOMING</vd:vetDocumentType>";
+                    text += "<vd:vetDocumentStatus>CONFIRMED</vd:vetDocumentStatus>";
                     text += "</merc:getVetDocumentChangesListRequest>\n";
                     text += "</apl:data>\n";
                     text += "</apl:application>\n";
