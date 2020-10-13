@@ -114,7 +114,6 @@
       <RootProperty Name="FontWeight" />
       <RootProperty Name="SelectionHighlightColor" />
       <RootProperty Name="Visibility" />
-      <RootProperty Name="Inlines" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Automation.AutomationProperties">
       <RootMethod Name="GetAcceleratorKey" />
@@ -143,6 +142,9 @@
     <RootType FullName="Windows.UI.Xaml.Media.Animation.TransitionCollection" />
     <RootType FullName="Windows.UI.Xaml.Media.Animation.RepositionThemeTransition" />
     <RootType FullName="ProjectHouseUWP.Settings" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ScrollViewer">
+      <RootProperty Name="Content" />
+    </RootType>
     <RootType FullName="ProjectHouseUWP.VSD" />
   </Roots.RootTypes>
 </Roots>

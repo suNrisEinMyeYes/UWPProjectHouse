@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Администратор\\Desktop\\clonemy\\UWPProjectHouse\\ProjectHouseUWP\\ProjectHouseUWP.csproj": {}
+    "C:\\Users\\Администратор\\Desktop\\clonemy22222\\UWPProjectHouse\\ProjectHouseUWP\\ProjectHouseUWP.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Администратор\\Desktop\\clonemy\\UWPProjectHouse\\ProjectHouseUWP\\ProjectHouseUWP.csproj": {
+    "C:\\Users\\Администратор\\Desktop\\clonemy22222\\UWPProjectHouse\\ProjectHouseUWP\\ProjectHouseUWP.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Администратор\\Desktop\\clonemy\\UWPProjectHouse\\ProjectHouseUWP\\ProjectHouseUWP.csproj",
+        "projectUniqueName": "C:\\Users\\Администратор\\Desktop\\clonemy22222\\UWPProjectHouse\\ProjectHouseUWP\\ProjectHouseUWP.csproj",
         "projectName": "ProjectHouseUWP",
-        "projectPath": "C:\\Users\\Администратор\\Desktop\\clonemy\\UWPProjectHouse\\ProjectHouseUWP\\ProjectHouseUWP.csproj",
+        "projectPath": "C:\\Users\\Администратор\\Desktop\\clonemy22222\\UWPProjectHouse\\ProjectHouseUWP\\ProjectHouseUWP.csproj",
         "packagesPath": "C:\\Users\\Администратор\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Администратор\\Desktop\\clonemy\\UWPProjectHouse\\ProjectHouseUWP\\obj\\",
+        "outputPath": "C:\\Users\\Администратор\\Desktop\\clonemy22222\\UWPProjectHouse\\ProjectHouseUWP\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [

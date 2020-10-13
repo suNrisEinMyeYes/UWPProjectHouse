@@ -9,8 +9,10 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
-        <TextBlock x:Name="test">Hello World!</TextBlock>
-        <Frame x:Name="contentFrame"/>
-    </Grid>
+    <!--<ListView x:Name="LVU" ItemsSource="{x:Bind uuids}"/>-->
+    <ScrollViewer>
+        <ScrollViewer.Content>
+            <TextBlock x:Name="textblock"></TextBlock>
+        </ScrollViewer.Content>
+    </ScrollViewer>
 </Page>

@@ -10,22 +10,22 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>e2f55b97-1c3b-4809-88b4-7af8bd36c9ad</PackageIdentityName>
     <PackageIdentityPublisher>CN=Администратор</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\Администратор\Desktop\clonemy\UWPProjectHouse\ProjectHouseUWP\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\Администратор\Desktop\clonemy22222\UWPProjectHouse\ProjectHouseUWP\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\Администратор\Desktop\clonemy\UWPProjectHouse\ProjectHouseUWP\bin\x86\Debug\AppX</LayoutDir>
+    <LayoutDir>C:\Users\Администратор\Desktop\clonemy22222\UWPProjectHouse\ProjectHouseUWP\bin\x86\Debug\AppX</LayoutDir>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Администратор\Desktop\clonemy\UWPProjectHouse\ProjectHouseUWP\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\Администратор\Desktop\clonemy22222\UWPProjectHouse\ProjectHouseUWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\Администратор\Desktop\clonemy\UWPProjectHouse\ProjectHouseUWP\bin\x86\Debug\ProjectHouseUWP.exe">
+    <AppxPackagedFile Include="C:\Users\Администратор\Desktop\clonemy22222\UWPProjectHouse\ProjectHouseUWP\bin\x86\Debug\ProjectHouseUWP.exe">
       <PackagePath>entrypoint\ProjectHouseUWP.exe</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Администратор\.nuget\packages\colorcode.core\2.0.6\lib\netstandard1.4\ColorCode.Core.dll">
@@ -85,58 +85,58 @@
     <AppxPackagedFile Include="C:\Users\Администратор\.nuget\packages\microsoft.toolkit.uwp.ui.controls.datagrid\6.1.1\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.Controls.DataGrid\Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.xr.xml">
       <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls.DataGrid\Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.xr.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Администратор\Desktop\clonemy\UWPProjectHouse\ProjectHouseUWP\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\Администратор\Desktop\clonemy22222\UWPProjectHouse\ProjectHouseUWP\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Администратор\Desktop\clonemy\UWPProjectHouse\ProjectHouseUWP\XMLFile1.xml">
+    <AppxPackagedFile Include="C:\Users\Администратор\Desktop\clonemy22222\UWPProjectHouse\ProjectHouseUWP\XMLFile1.xml">
       <PackagePath>XMLFile1.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Администратор\Desktop\clonemy\UWPProjectHouse\ProjectHouseUWP\XMLFile2.xml">
+    <AppxPackagedFile Include="C:\Users\Администратор\Desktop\clonemy22222\UWPProjectHouse\ProjectHouseUWP\XMLFile2.xml">
       <PackagePath>XMLFile2.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Администратор\Desktop\clonemy\UWPProjectHouse\ProjectHouseUWP\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Администратор\Desktop\clonemy22222\UWPProjectHouse\ProjectHouseUWP\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Администратор\Desktop\clonemy\UWPProjectHouse\ProjectHouseUWP\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Администратор\Desktop\clonemy22222\UWPProjectHouse\ProjectHouseUWP\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Администратор\Desktop\clonemy\UWPProjectHouse\ProjectHouseUWP\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Администратор\Desktop\clonemy22222\UWPProjectHouse\ProjectHouseUWP\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Администратор\Desktop\clonemy\UWPProjectHouse\ProjectHouseUWP\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Администратор\Desktop\clonemy22222\UWPProjectHouse\ProjectHouseUWP\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Администратор\Desktop\clonemy\UWPProjectHouse\ProjectHouseUWP\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\Администратор\Desktop\clonemy22222\UWPProjectHouse\ProjectHouseUWP\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Администратор\Desktop\clonemy\UWPProjectHouse\ProjectHouseUWP\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\Администратор\Desktop\clonemy22222\UWPProjectHouse\ProjectHouseUWP\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Администратор\Desktop\clonemy\UWPProjectHouse\ProjectHouseUWP\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Администратор\Desktop\clonemy22222\UWPProjectHouse\ProjectHouseUWP\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Администратор\Desktop\clonemy\UWPProjectHouse\ProjectHouseUWP\bin\x86\Debug\ProjectHouseUWP.xr.xml">
+    <AppxPackagedFile Include="C:\Users\Администратор\Desktop\clonemy22222\UWPProjectHouse\ProjectHouseUWP\bin\x86\Debug\ProjectHouseUWP.xr.xml">
       <PackagePath>ProjectHouseUWP.xr.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Администратор\Desktop\clonemy\UWPProjectHouse\ProjectHouseUWP\bin\x86\Debug\App.xbf">
+    <AppxPackagedFile Include="C:\Users\Администратор\Desktop\clonemy22222\UWPProjectHouse\ProjectHouseUWP\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Администратор\Desktop\clonemy\UWPProjectHouse\ProjectHouseUWP\bin\x86\Debug\DataGrid.xbf">
+    <AppxPackagedFile Include="C:\Users\Администратор\Desktop\clonemy22222\UWPProjectHouse\ProjectHouseUWP\bin\x86\Debug\DataGrid.xbf">
       <PackagePath>DataGrid.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Администратор\Desktop\clonemy\UWPProjectHouse\ProjectHouseUWP\bin\x86\Debug\MainPage.xbf">
+    <AppxPackagedFile Include="C:\Users\Администратор\Desktop\clonemy22222\UWPProjectHouse\ProjectHouseUWP\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Администратор\Desktop\clonemy\UWPProjectHouse\ProjectHouseUWP\bin\x86\Debug\Settings.xbf">
+    <AppxPackagedFile Include="C:\Users\Администратор\Desktop\clonemy22222\UWPProjectHouse\ProjectHouseUWP\bin\x86\Debug\Settings.xbf">
       <PackagePath>Settings.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Администратор\Desktop\clonemy\UWPProjectHouse\ProjectHouseUWP\bin\x86\Debug\VSD.xbf">
+    <AppxPackagedFile Include="C:\Users\Администратор\Desktop\clonemy22222\UWPProjectHouse\ProjectHouseUWP\bin\x86\Debug\VSD.xbf">
       <PackagePath>VSD.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.18362.0\\redist\Debug\x86\ucrtbased.dll">
@@ -148,10 +148,10 @@
     <AppxPackagedFile Include="C:\Users\Администратор\.nuget\packages\microsoft.ui.xaml\2.4.3\buildTransitive\..\lib\uap10.0\Microsoft.UI.Xaml.winmd">
       <PackagePath>WinMetadata\Microsoft.UI.Xaml.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Администратор\Desktop\clonemy\UWPProjectHouse\ProjectHouseUWP\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\Администратор\Desktop\clonemy22222\UWPProjectHouse\ProjectHouseUWP\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Администратор\Desktop\clonemy\UWPProjectHouse\ProjectHouseUWP\bin\x86\Debug\Core\ProjectHouseUWP.exe">
+    <AppxPackagedFile Include="C:\Users\Администратор\Desktop\clonemy22222\UWPProjectHouse\ProjectHouseUWP\bin\x86\Debug\Core\ProjectHouseUWP.exe">
       <PackagePath>ProjectHouseUWP.exe</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

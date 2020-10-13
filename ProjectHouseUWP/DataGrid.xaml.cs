@@ -44,9 +44,23 @@ namespace ProjectHouseUWP
             {
                 var info = await GetProductsAsync(ConnHolder.GetConnStr());
 
-                foreach (var item in info)
+                if (info != null)
                 {
-                    Info.Add(item);
+                    foreach (var item in info)
+                    {
+                        Info.Add(item);
+                    }
+                }
+                else
+                {
+                    ContentDialog dialog = new ContentDialog()
+                    {
+                        Title = "DataBase connection problem.",
+                        Content = "No data from Database provided, please login into db",
+                        PrimaryButtonText = "ОК",
+                    };
+                    await dialog.ShowAsync();
+
                 }
             }
             catch (Exception ex)

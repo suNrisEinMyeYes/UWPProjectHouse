@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "SzB5qVV0qAb03ZBKCKAnTVbh7sdbm3c9yw5htoDbPbI9tF0JxCdYRWTpxEzHQvKi6IMcSqWdukasiag/2XDowQ==",
+  "dgSpecHash": "ahtvSaxcTb95wecikW4Y5ZXCDTSDBDFEqINFTQrEg6Stj9E2P5d8lOWgVHTSErZZtv6uLyGZfUA9GIabUjeotA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Администратор\\Desktop\\clonemy\\UWPProjectHouse\\ProjectHouseUWP\\ProjectHouseUWP.csproj",
+  "projectFilePath": "C:\\Users\\Администратор\\Desktop\\clonemy22222\\UWPProjectHouse\\ProjectHouseUWP\\ProjectHouseUWP.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Администратор\\.nuget\\packages\\colorcode.core\\2.0.6\\colorcode.core.2.0.6.nupkg.sha512",
     "C:\\Users\\Администратор\\.nuget\\packages\\colorcode.uwp\\2.0.6\\colorcode.uwp.2.0.6.nupkg.sha512",

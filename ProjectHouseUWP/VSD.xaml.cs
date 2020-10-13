@@ -27,7 +27,10 @@ namespace ProjectHouseUWP
         public VSD()
         {
             this.InitializeComponent();
+            string text = File.ReadAllText(Windows.Storage.ApplicationData.Current.LocalFolder.Path + "\\" + "Out.xml");
+            textblock.Text = text;
         }
+        /*
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             if (e.Parameter != null)
@@ -43,6 +46,7 @@ namespace ProjectHouseUWP
             
             
         }
+        */
 
 
     }
