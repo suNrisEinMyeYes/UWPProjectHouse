@@ -119,18 +119,21 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Models\Class1.cs" />
+    <Compile Include="CommandsToWorkWithDB.cs" />
     <Compile Include="ConnHolder.cs" />
     <Compile Include="DataGrid.xaml.cs">
       <DependentUpon>DataGrid.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ExplorerItem.cs" />
     <Compile Include="HttpRest.cs" />
     <Compile Include="IEnumerationPaths.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Model.cs" />
+    <Compile Include="Models\Model.cs" />
+    <Compile Include="Models\ModelForDGBig.cs" />
+    <Compile Include="Models\ModelForDGSmall.cs" />
+    <Compile Include="Models\ModelOfVetDoc.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Settings.xaml.cs">
       <DependentUpon>Settings.xaml</DependentUpon>

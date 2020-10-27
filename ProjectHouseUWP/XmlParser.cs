@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml;
@@ -39,7 +40,7 @@ namespace ProjectHouseUWP
             using (FileStream fs = new FileStream(Windows.Storage.ApplicationData.Current.LocalFolder.Path + "\\" + "Out.xml", FileMode.OpenOrCreate))
             {
                 xmlSerializer.Serialize(fs, xml);
-
+                
                 Console.WriteLine("Объект сериализован");
             }
 

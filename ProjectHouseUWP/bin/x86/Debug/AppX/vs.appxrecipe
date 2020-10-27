@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>DESKTOP-ISQ03U9</Machine>
-    <WindowsUser>Администратор</WindowsUser>
+    <Machine>DESKTOP-2OJLTJR</Machine>
+    <WindowsUser>Buddy</WindowsUser>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetOsVersion>10.0</TargetOsVersion>
     <TargetOsDescription>Windows 10.0</TargetOsDescription>
@@ -10,7 +10,7 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>e2f55b97-1c3b-4809-88b4-7af8bd36c9ad</PackageIdentityName>
     <PackageIdentityPublisher>CN=Администратор</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\Администратор\Desktop\clonemy22222\UWPProjectHouse\ProjectHouseUWP\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>D:\Work\UWPProjectHouse\ProjectHouseUWP\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
@@ -18,8 +18,8 @@
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\Администратор\Desktop\clonemy22222\UWPProjectHouse\ProjectHouseUWP\bin\x86\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>B8C20BF01039DFB9E1FA63DF6B4A1F3EA69A95DEDF650F44E093A579FA6F637F</RegisteredManifestChecksum>
+    <LayoutDir>D:\Work\UWPProjectHouse\ProjectHouseUWP\bin\x86\Debug\AppX</LayoutDir>
+    <RegisteredManifestChecksum>09EDBEA7E34D1119AFEA5B89EBAC4D46388E95A922ECBCC93EE25DC4D09D7CFF</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>e2f55b97-1c3b-4809-88b4-7af8bd36c9ad_1.0.0.0_x86__qq60qpavyap0y</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>e2f55b97-1c3b-4809-88b4-7af8bd36c9ad_qq60qpavyap0y!App</RegisteredUserModeAppID>
     <RegisteredPackageID>e2f55b97-1c3b-4809-88b4-7af8bd36c9ad</RegisteredPackageID>
@@ -27,227 +27,227 @@
     <RegisteredVersion>1.0.0.0</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Администратор\Desktop\clonemy22222\UWPProjectHouse\ProjectHouseUWP\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="D:\Work\UWPProjectHouse\ProjectHouseUWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-10-13T04:14:35.284</Modified>
+      <Modified>2020-10-27T06:21:47.239</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\Администратор\Desktop\clonemy22222\UWPProjectHouse\ProjectHouseUWP\bin\x86\Debug\ProjectHouseUWP.exe">
+    <AppxPackagedFile Include="D:\Work\UWPProjectHouse\ProjectHouseUWP\bin\x86\Debug\ProjectHouseUWP.exe">
       <PackagePath>entrypoint\ProjectHouseUWP.exe</PackagePath>
-      <Modified>2020-10-13T04:14:32.824</Modified>
+      <Modified>2020-10-27T06:21:44.421</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Администратор\.nuget\packages\colorcode.core\2.0.6\lib\netstandard1.4\ColorCode.Core.dll">
+    <AppxPackagedFile Include="C:\Users\Buddy\.nuget\packages\colorcode.core\2.0.6\lib\netstandard1.4\ColorCode.Core.dll">
       <PackagePath>ColorCode.Core.dll</PackagePath>
-      <Modified>2018-10-05T16:30:08.000</Modified>
+      <Modified>2018-10-05T20:30:08.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Администратор\.nuget\packages\colorcode.uwp\2.0.6\lib\uap10.0\ColorCode.UWP.dll">
+    <AppxPackagedFile Include="C:\Users\Buddy\.nuget\packages\colorcode.uwp\2.0.6\lib\uap10.0\ColorCode.UWP.dll">
       <PackagePath>ColorCode.UWP.dll</PackagePath>
-      <Modified>2018-10-05T16:30:16.000</Modified>
+      <Modified>2018-10-05T20:30:16.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Администратор\.nuget\packages\microsoft.toolkit\6.1.1\lib\netstandard2.0\Microsoft.Toolkit.dll">
+    <AppxPackagedFile Include="C:\Users\Buddy\.nuget\packages\microsoft.toolkit\6.1.1\lib\netstandard2.0\Microsoft.Toolkit.dll">
       <PackagePath>Microsoft.Toolkit.dll</PackagePath>
-      <Modified>2020-08-12T15:29:22.000</Modified>
+      <Modified>2020-08-12T19:29:22.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Администратор\.nuget\packages\microsoft.toolkit.parsers\6.1.1\lib\netstandard2.0\Microsoft.Toolkit.Parsers.dll">
+    <AppxPackagedFile Include="C:\Users\Buddy\.nuget\packages\microsoft.toolkit.parsers\6.1.1\lib\netstandard2.0\Microsoft.Toolkit.Parsers.dll">
       <PackagePath>Microsoft.Toolkit.Parsers.dll</PackagePath>
-      <Modified>2020-08-12T15:29:28.000</Modified>
+      <Modified>2020-08-12T19:29:28.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Администратор\.nuget\packages\microsoft.toolkit.uwp\6.1.1\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.dll">
+    <AppxPackagedFile Include="C:\Users\Buddy\.nuget\packages\microsoft.toolkit.uwp\6.1.1\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.dll">
       <PackagePath>Microsoft.Toolkit.Uwp.dll</PackagePath>
-      <Modified>2020-08-12T15:29:36.000</Modified>
+      <Modified>2020-08-12T19:29:36.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Администратор\.nuget\packages\microsoft.toolkit.uwp.ui\6.1.1\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.dll">
+    <AppxPackagedFile Include="C:\Users\Buddy\.nuget\packages\microsoft.toolkit.uwp.ui\6.1.1\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.dll">
       <PackagePath>Microsoft.Toolkit.Uwp.UI.dll</PackagePath>
-      <Modified>2020-08-12T15:30:04.000</Modified>
+      <Modified>2020-08-12T19:30:04.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Администратор\.nuget\packages\microsoft.toolkit.uwp.ui.animations\6.1.1\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.Animations.dll">
+    <AppxPackagedFile Include="C:\Users\Buddy\.nuget\packages\microsoft.toolkit.uwp.ui.animations\6.1.1\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.Animations.dll">
       <PackagePath>Microsoft.Toolkit.Uwp.UI.Animations.dll</PackagePath>
-      <Modified>2020-08-12T15:30:06.000</Modified>
+      <Modified>2020-08-12T19:30:06.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Администратор\.nuget\packages\microsoft.toolkit.uwp.ui.controls\6.1.1\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.Controls.dll">
+    <AppxPackagedFile Include="C:\Users\Buddy\.nuget\packages\microsoft.toolkit.uwp.ui.controls\6.1.1\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.Controls.dll">
       <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls.dll</PackagePath>
-      <Modified>2020-08-12T15:30:10.000</Modified>
+      <Modified>2020-08-12T19:30:10.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Администратор\.nuget\packages\microsoft.toolkit.uwp.ui.controls.datagrid\6.1.1\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.dll">
+    <AppxPackagedFile Include="C:\Users\Buddy\.nuget\packages\microsoft.toolkit.uwp.ui.controls.datagrid\6.1.1\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.dll">
       <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.dll</PackagePath>
-      <Modified>2020-08-12T15:30:14.000</Modified>
+      <Modified>2020-08-12T19:30:14.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Администратор\.nuget\packages\microsoft.xaml.behaviors.uwp.managed\2.0.1\lib\uap10.0\Microsoft.Xaml.Interactions.dll">
+    <AppxPackagedFile Include="C:\Users\Buddy\.nuget\packages\microsoft.xaml.behaviors.uwp.managed\2.0.1\lib\uap10.0\Microsoft.Xaml.Interactions.dll">
       <PackagePath>Microsoft.Xaml.Interactions.dll</PackagePath>
-      <Modified>2019-04-26T18:06:58.000</Modified>
+      <Modified>2019-04-26T22:06:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Администратор\.nuget\packages\microsoft.xaml.behaviors.uwp.managed\2.0.1\lib\uap10.0\Microsoft.Xaml.Interactivity.dll">
+    <AppxPackagedFile Include="C:\Users\Buddy\.nuget\packages\microsoft.xaml.behaviors.uwp.managed\2.0.1\lib\uap10.0\Microsoft.Xaml.Interactivity.dll">
       <PackagePath>Microsoft.Xaml.Interactivity.dll</PackagePath>
-      <Modified>2019-04-26T18:06:08.000</Modified>
+      <Modified>2019-04-26T22:06:08.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Администратор\.nuget\packages\newtonsoft.json\10.0.3\lib\netstandard1.3\Newtonsoft.Json.dll">
+    <AppxPackagedFile Include="C:\Users\Buddy\.nuget\packages\newtonsoft.json\10.0.3\lib\netstandard1.3\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
-      <Modified>2017-06-18T06:57:10.000</Modified>
+      <Modified>2017-06-18T10:57:10.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.10\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
-      <Modified>2020-02-27T12:16:04.000</Modified>
+      <Modified>2020-02-27T16:16:04.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Администратор\.nuget\packages\system.runtime.compilerservices.unsafe\4.5.3\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll">
+    <AppxPackagedFile Include="C:\Users\Buddy\.nuget\packages\system.runtime.compilerservices.unsafe\4.5.3\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll">
       <PackagePath>System.Runtime.CompilerServices.Unsafe.dll</PackagePath>
-      <Modified>2020-02-19T03:05:16.000</Modified>
+      <Modified>2020-02-19T07:05:16.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Администратор\.nuget\packages\win2d.uwp\1.25.0\runtimes\win10-x86\native\Microsoft.Graphics.Canvas.dll">
+    <AppxPackagedFile Include="C:\Users\Buddy\.nuget\packages\win2d.uwp\1.25.0\runtimes\win10-x86\native\Microsoft.Graphics.Canvas.dll">
       <PackagePath>Microsoft.Graphics.Canvas.dll</PackagePath>
-      <Modified>2020-04-02T12:44:36.000</Modified>
+      <Modified>2020-04-02T16:44:36.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Администратор\.nuget\packages\win2d.uwp\1.25.0\lib\uap10.0\Microsoft.Graphics.Canvas.winmd">
+    <AppxPackagedFile Include="C:\Users\Buddy\.nuget\packages\win2d.uwp\1.25.0\lib\uap10.0\Microsoft.Graphics.Canvas.winmd">
       <PackagePath>Microsoft.Graphics.Canvas.winmd</PackagePath>
-      <Modified>2020-04-02T12:44:36.000</Modified>
+      <Modified>2020-04-02T16:44:36.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.18362.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
-      <Modified>2019-03-18T11:36:56.000</Modified>
+      <Modified>2019-03-18T15:36:56.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Администратор\.nuget\packages\microsoft.toolkit.uwp.ui.controls\6.1.1\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.Controls\Microsoft.Toolkit.Uwp.UI.Controls.xr.xml">
+    <AppxPackagedFile Include="C:\Users\Buddy\.nuget\packages\microsoft.toolkit.uwp.ui.controls\6.1.1\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.Controls\Microsoft.Toolkit.Uwp.UI.Controls.xr.xml">
       <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\Microsoft.Toolkit.Uwp.UI.Controls.xr.xml</PackagePath>
-      <Modified>2020-08-12T15:07:10.000</Modified>
+      <Modified>2020-08-12T19:07:10.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Администратор\.nuget\packages\microsoft.toolkit.uwp.ui.controls.datagrid\6.1.1\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.Controls.DataGrid\Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.xr.xml">
+    <AppxPackagedFile Include="C:\Users\Buddy\.nuget\packages\microsoft.toolkit.uwp.ui.controls.datagrid\6.1.1\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.Controls.DataGrid\Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.xr.xml">
       <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls.DataGrid\Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.xr.xml</PackagePath>
-      <Modified>2020-08-12T15:03:04.000</Modified>
+      <Modified>2020-08-12T19:03:04.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Администратор\Desktop\clonemy22222\UWPProjectHouse\ProjectHouseUWP\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="D:\Work\UWPProjectHouse\ProjectHouseUWP\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
-      <Modified>2020-10-13T04:11:12.177</Modified>
+      <Modified>2020-10-14T12:09:06.508</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Администратор\Desktop\clonemy22222\UWPProjectHouse\ProjectHouseUWP\XMLFile1.xml">
+    <AppxPackagedFile Include="D:\Work\UWPProjectHouse\ProjectHouseUWP\XMLFile1.xml">
       <PackagePath>XMLFile1.xml</PackagePath>
-      <Modified>2020-10-13T04:11:12.179</Modified>
+      <Modified>2020-10-14T12:09:06.509</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Администратор\Desktop\clonemy22222\UWPProjectHouse\ProjectHouseUWP\XMLFile2.xml">
+    <AppxPackagedFile Include="D:\Work\UWPProjectHouse\ProjectHouseUWP\XMLFile2.xml">
       <PackagePath>XMLFile2.xml</PackagePath>
-      <Modified>2020-10-13T04:11:12.182</Modified>
+      <Modified>2020-10-14T12:09:06.512</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Администратор\Desktop\clonemy22222\UWPProjectHouse\ProjectHouseUWP\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="D:\Work\UWPProjectHouse\ProjectHouseUWP\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
-      <Modified>2020-10-13T04:11:12.163</Modified>
+      <Modified>2020-10-14T12:09:06.498</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Администратор\Desktop\clonemy22222\UWPProjectHouse\ProjectHouseUWP\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="D:\Work\UWPProjectHouse\ProjectHouseUWP\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-10-13T04:11:12.166</Modified>
+      <Modified>2020-10-14T12:09:06.504</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Администратор\Desktop\clonemy22222\UWPProjectHouse\ProjectHouseUWP\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\Work\UWPProjectHouse\ProjectHouseUWP\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-10-13T04:11:12.167</Modified>
+      <Modified>2020-10-14T12:09:06.504</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Администратор\Desktop\clonemy22222\UWPProjectHouse\ProjectHouseUWP\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\Work\UWPProjectHouse\ProjectHouseUWP\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-10-13T04:11:12.167</Modified>
+      <Modified>2020-10-14T12:09:06.504</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Администратор\Desktop\clonemy22222\UWPProjectHouse\ProjectHouseUWP\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="D:\Work\UWPProjectHouse\ProjectHouseUWP\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-10-13T04:11:12.168</Modified>
+      <Modified>2020-10-14T12:09:06.505</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Администратор\Desktop\clonemy22222\UWPProjectHouse\ProjectHouseUWP\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="D:\Work\UWPProjectHouse\ProjectHouseUWP\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-10-13T04:11:12.168</Modified>
+      <Modified>2020-10-14T12:09:06.505</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Администратор\Desktop\clonemy22222\UWPProjectHouse\ProjectHouseUWP\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\Work\UWPProjectHouse\ProjectHouseUWP\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-10-13T04:11:12.168</Modified>
+      <Modified>2020-10-14T12:09:06.505</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Администратор\Desktop\clonemy22222\UWPProjectHouse\ProjectHouseUWP\bin\x86\Debug\ProjectHouseUWP.xr.xml">
+    <AppxPackagedFile Include="D:\Work\UWPProjectHouse\ProjectHouseUWP\bin\x86\Debug\ProjectHouseUWP.xr.xml">
       <PackagePath>ProjectHouseUWP.xr.xml</PackagePath>
-      <Modified>2020-10-13T04:14:32.543</Modified>
+      <Modified>2020-10-27T06:21:44.194</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Администратор\Desktop\clonemy22222\UWPProjectHouse\ProjectHouseUWP\bin\x86\Debug\App.xbf">
+    <AppxPackagedFile Include="D:\Work\UWPProjectHouse\ProjectHouseUWP\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2020-10-13T04:14:32.565</Modified>
+      <Modified>2020-10-27T06:21:44.208</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Администратор\Desktop\clonemy22222\UWPProjectHouse\ProjectHouseUWP\bin\x86\Debug\DataGrid.xbf">
+    <AppxPackagedFile Include="D:\Work\UWPProjectHouse\ProjectHouseUWP\bin\x86\Debug\DataGrid.xbf">
       <PackagePath>DataGrid.xbf</PackagePath>
-      <Modified>2020-10-13T04:14:32.565</Modified>
+      <Modified>2020-10-27T06:21:44.208</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Администратор\Desktop\clonemy22222\UWPProjectHouse\ProjectHouseUWP\bin\x86\Debug\MainPage.xbf">
+    <AppxPackagedFile Include="D:\Work\UWPProjectHouse\ProjectHouseUWP\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2020-10-13T04:14:32.566</Modified>
+      <Modified>2020-10-27T06:21:44.205</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Администратор\Desktop\clonemy22222\UWPProjectHouse\ProjectHouseUWP\bin\x86\Debug\Settings.xbf">
+    <AppxPackagedFile Include="D:\Work\UWPProjectHouse\ProjectHouseUWP\bin\x86\Debug\Settings.xbf">
       <PackagePath>Settings.xbf</PackagePath>
-      <Modified>2020-10-13T04:14:32.566</Modified>
+      <Modified>2020-10-27T06:21:44.208</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Администратор\Desktop\clonemy22222\UWPProjectHouse\ProjectHouseUWP\bin\x86\Debug\VSD.xbf">
+    <AppxPackagedFile Include="D:\Work\UWPProjectHouse\ProjectHouseUWP\bin\x86\Debug\VSD.xbf">
       <PackagePath>VSD.xbf</PackagePath>
-      <Modified>2020-10-13T04:14:32.566</Modified>
+      <Modified>2020-10-27T06:21:44.208</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.18362.0\\redist\Debug\x86\ucrtbased.dll">
       <PackagePath>ucrtbased.dll</PackagePath>
-      <Modified>2019-03-18T11:43:58.000</Modified>
+      <Modified>2019-03-18T15:43:58.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.18362.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
-      <Modified>2019-03-18T10:33:42.000</Modified>
+      <Modified>2019-03-18T14:33:42.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Администратор\.nuget\packages\microsoft.ui.xaml\2.4.3\buildTransitive\..\lib\uap10.0\Microsoft.UI.Xaml.winmd">
+    <AppxPackagedFile Include="C:\Users\Buddy\.nuget\packages\microsoft.ui.xaml\2.4.3\buildTransitive\..\lib\uap10.0\Microsoft.UI.Xaml.winmd">
       <PackagePath>WinMetadata\Microsoft.UI.Xaml.winmd</PackagePath>
-      <Modified>2020-07-09T17:07:08.000</Modified>
+      <Modified>2020-07-09T21:07:08.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Администратор\Desktop\clonemy22222\UWPProjectHouse\ProjectHouseUWP\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="D:\Work\UWPProjectHouse\ProjectHouseUWP\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2020-10-13T04:14:33.760</Modified>
+      <Modified>2020-10-20T05:06:49.528</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Администратор\Desktop\clonemy22222\UWPProjectHouse\ProjectHouseUWP\bin\x86\Debug\Core\ProjectHouseUWP.exe">
+    <AppxPackagedFile Include="D:\Work\UWPProjectHouse\ProjectHouseUWP\bin\x86\Debug\Core\ProjectHouseUWP.exe">
       <PackagePath>ProjectHouseUWP.exe</PackagePath>
-      <Modified>2020-10-13T04:14:35.258</Modified>
+      <Modified>2020-10-27T06:21:47.235</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
-    <ResolvedSDKReference Include="C:\Users\Администратор\.nuget\packages\microsoft.ui.xaml\2.4.3\buildTransitive\..\tools\AppX\x86\Release\Microsoft.UI.Xaml.2.4.appx">
+    <ResolvedSDKReference Include="C:\Users\Buddy\.nuget\packages\microsoft.ui.xaml\2.4.3\buildTransitive\..\tools\AppX\x86\Release\Microsoft.UI.Xaml.2.4.appx">
       <Name>Microsoft.UI.Xaml.2.4</Name>
       <Version>2.42007.9001.0</Version>
       <Architecture>x86</Architecture>
       <FrameworkIdentity>Name = Microsoft.UI.Xaml.2.4, MinVersion = 2.42007.9001.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Users\Администратор\.nuget\packages\microsoft.ui.xaml\2.4.3\buildTransitive\..\tools\AppX\x86\Release\Microsoft.UI.Xaml.2.4.appx</AppxLocation>
+      <AppxLocation>C:\Users\Buddy\.nuget\packages\microsoft.ui.xaml\2.4.3\buildTransitive\..\tools\AppX\x86\Release\Microsoft.UI.Xaml.2.4.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
-    <ResolvedSDKReference Include="C:\Users\Администратор\.nuget\packages\microsoft.ui.xaml\2.4.3\buildTransitive\..\tools\AppX\x86\Release\Microsoft.UI.Xaml.2.4.appx">
+    <ResolvedSDKReference Include="C:\Users\Buddy\.nuget\packages\microsoft.ui.xaml\2.4.3\buildTransitive\..\tools\AppX\x86\Release\Microsoft.UI.Xaml.2.4.appx">
       <Name>Microsoft.UI.Xaml.2.4</Name>
       <Version>2.42007.9001.0</Version>
       <Architecture>Win32</Architecture>
       <FrameworkIdentity>Name = Microsoft.UI.Xaml.2.4, MinVersion = 2.42007.9001.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Users\Администратор\.nuget\packages\microsoft.ui.xaml\2.4.3\buildTransitive\..\tools\AppX\x86\Release\Microsoft.UI.Xaml.2.4.appx</AppxLocation>
+      <AppxLocation>C:\Users\Buddy\.nuget\packages\microsoft.ui.xaml\2.4.3\buildTransitive\..\tools\AppX\x86\Release\Microsoft.UI.Xaml.2.4.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
-    <ResolvedSDKReference Include="C:\Users\Администратор\.nuget\packages\microsoft.ui.xaml\2.4.3\buildTransitive\..\tools\AppX\x64\Release\Microsoft.UI.Xaml.2.4.appx">
+    <ResolvedSDKReference Include="C:\Users\Buddy\.nuget\packages\microsoft.ui.xaml\2.4.3\buildTransitive\..\tools\AppX\x64\Release\Microsoft.UI.Xaml.2.4.appx">
       <Name>Microsoft.UI.Xaml.2.4</Name>
       <Version>2.42007.9001.0</Version>
       <Architecture>x64</Architecture>
       <FrameworkIdentity>Name = Microsoft.UI.Xaml.2.4, MinVersion = 2.42007.9001.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Users\Администратор\.nuget\packages\microsoft.ui.xaml\2.4.3\buildTransitive\..\tools\AppX\x64\Release\Microsoft.UI.Xaml.2.4.appx</AppxLocation>
+      <AppxLocation>C:\Users\Buddy\.nuget\packages\microsoft.ui.xaml\2.4.3\buildTransitive\..\tools\AppX\x64\Release\Microsoft.UI.Xaml.2.4.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
-    <ResolvedSDKReference Include="C:\Users\Администратор\.nuget\packages\microsoft.ui.xaml\2.4.3\buildTransitive\..\tools\AppX\arm\Release\Microsoft.UI.Xaml.2.4.appx">
+    <ResolvedSDKReference Include="C:\Users\Buddy\.nuget\packages\microsoft.ui.xaml\2.4.3\buildTransitive\..\tools\AppX\arm\Release\Microsoft.UI.Xaml.2.4.appx">
       <Name>Microsoft.UI.Xaml.2.4</Name>
       <Version>2.42007.9001.0</Version>
       <Architecture>arm</Architecture>
       <FrameworkIdentity>Name = Microsoft.UI.Xaml.2.4, MinVersion = 2.42007.9001.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Users\Администратор\.nuget\packages\microsoft.ui.xaml\2.4.3\buildTransitive\..\tools\AppX\arm\Release\Microsoft.UI.Xaml.2.4.appx</AppxLocation>
+      <AppxLocation>C:\Users\Buddy\.nuget\packages\microsoft.ui.xaml\2.4.3\buildTransitive\..\tools\AppX\arm\Release\Microsoft.UI.Xaml.2.4.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
-    <ResolvedSDKReference Include="C:\Users\Администратор\.nuget\packages\microsoft.ui.xaml\2.4.3\buildTransitive\..\tools\AppX\arm64\Release\Microsoft.UI.Xaml.2.4.appx">
+    <ResolvedSDKReference Include="C:\Users\Buddy\.nuget\packages\microsoft.ui.xaml\2.4.3\buildTransitive\..\tools\AppX\arm64\Release\Microsoft.UI.Xaml.2.4.appx">
       <Name>Microsoft.UI.Xaml.2.4</Name>
       <Version>2.42007.9001.0</Version>
       <Architecture>arm64</Architecture>
       <FrameworkIdentity>Name = Microsoft.UI.Xaml.2.4, MinVersion = 2.42007.9001.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Users\Администратор\.nuget\packages\microsoft.ui.xaml\2.4.3\buildTransitive\..\tools\AppX\arm64\Release\Microsoft.UI.Xaml.2.4.appx</AppxLocation>
+      <AppxLocation>C:\Users\Buddy\.nuget\packages\microsoft.ui.xaml\2.4.3\buildTransitive\..\tools\AppX\arm64\Release\Microsoft.UI.Xaml.2.4.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
